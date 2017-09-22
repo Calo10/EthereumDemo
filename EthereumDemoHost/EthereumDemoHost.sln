@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EthereumDemoHost", "EthereumDemoHost\EthereumDemoHost.csproj", "{BB19B505-C336-4AE5-965F-F0B32D3632EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EthereumDemoHost.Tests", "EthereumDemoHost.Tests\EthereumDemoHost.Tests.csproj", "{01229DF5-0A08-4342-B339-6948A5F6C86A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB19B505-C336-4AE5-965F-F0B32D3632EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB19B505-C336-4AE5-965F-F0B32D3632EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB19B505-C336-4AE5-965F-F0B32D3632EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB19B505-C336-4AE5-965F-F0B32D3632EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01229DF5-0A08-4342-B339-6948A5F6C86A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01229DF5-0A08-4342-B339-6948A5F6C86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01229DF5-0A08-4342-B339-6948A5F6C86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01229DF5-0A08-4342-B339-6948A5F6C86A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

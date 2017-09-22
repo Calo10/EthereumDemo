@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{D8DC422F-9C8B-4F66-B49A-D9A156CAF3B5}|Default">
+  <MonoDevelop.Ide.ItemProperties.EthereumDemoApp.Droid PreferredExecutionTarget="f6b6217f-4ffc-4101-a3e8-7737fc29fbf6" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EthereumDemoApp/ViewModels/LoginViewModel.cs">
+    <Files>
+      <File FileName="EthereumDemoApp/App.xaml" Line="19" Column="1" />
+      <File FileName="EthereumDemoApp/Views/MainPage.cs" Line="16" Column="56" />
+      <File FileName="EthereumDemoApp/ViewModels/BaseViewModel.cs" Line="1" Column="1" />
+      <File FileName="EthereumDemoApp/App.xaml.cs" Line="2" Column="29" />
+      <File FileName="EthereumDemoApp/Views/LoginPage.cs" Line="1" Column="1" />
+      <File FileName="EthereumDemoApp/Views/LoginPage.xaml" Line="27" Column="1" />
+      <File FileName="EthereumDemoApp/Views/LoginPage.xaml.cs" Line="6" Column="11" />
+      <File FileName="EthereumDemoApp/Services/CloudDataStore.cs" Line="22" Column="38" />
+      <File FileName="EthereumDemoApp/ViewModels/ItemDetailViewModel.cs" Line="13" Column="6" />
+      <File FileName="EthereumDemoApp/ViewModels/LoginViewModel.cs" Line="11" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.EthereumDemoApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.38C27435-D70F-4A89-B2FC-8A2F44DA998C">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.EthereumDemoApp.iOS>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

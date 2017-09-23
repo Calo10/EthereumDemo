@@ -27,6 +27,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Member.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Option.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Vote.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\HomeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Login.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />

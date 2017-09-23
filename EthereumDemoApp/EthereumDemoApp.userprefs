@@ -1,25 +1,27 @@
-﻿<Properties StartupConfiguration="{DC31C124-E8E0-451F-9FC5-B5D29E41BD27}|Default">
+﻿<Properties StartupConfiguration="{D8DC422F-9C8B-4F66-B49A-D9A156CAF3B5}|Default">
   <MonoDevelop.Ide.ItemProperties.EthereumDemoApp.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EthereumDemoApp/Models/Vote.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EthereumDemoApp/Models/Login.cs">
     <Files>
       <File FileName="Droid/MainActivity.cs" Line="27" Column="10" />
       <File FileName="EthereumDemoApp/Views/TakePicturePage.xaml" Line="15" Column="1" />
       <File FileName="EthereumDemoApp/Views/TakePicturePage.xaml.cs" Line="19" Column="1" />
-      <File FileName="EthereumDemoApp/Views/LoginPage.xaml" Line="25" Column="1" />
-      <File FileName="EthereumDemoApp/ViewModels/LoginViewModel.cs" Line="36" Column="47" />
+      <File FileName="EthereumDemoApp/Views/LoginPage.xaml" Line="18" Column="72" />
+      <File FileName="EthereumDemoApp/ViewModels/LoginViewModel.cs" Line="22" Column="10" />
       <File FileName="EthereumDemoApp/Views/LoginPage.xaml.cs" Line="13" Column="35" />
       <File FileName="Droid/obj/Debug/EthereumDemoApp.Droid.Views.LoginPage.xaml.g.cs" Line="28" Column="1" />
       <File FileName="iOS/Main.cs" Line="21" Column="1" />
       <File FileName="Droid/Resources/xml/file_paths.xml" Line="3" Column="50" />
       <File FileName="EthereumDemoApp/App.xaml.cs" Line="1" Column="1" />
       <File FileName="EthereumDemoApp/Models/API_Dictionary.cs" Line="11" Column="9" />
-      <File FileName="EthereumDemoApp/Models/Proposal.cs" Line="24" Column="1" />
-      <File FileName="EthereumDemoApp/Models/Member.cs" Line="9" Column="26" />
+      <File FileName="EthereumDemoApp/Models/Proposal.cs" Line="19" Column="25" />
+      <File FileName="EthereumDemoApp/Models/Member.cs" Line="14" Column="1" />
       <File FileName="EthereumDemoApp/Models/Option.cs" Line="10" Column="32" />
-      <File FileName="EthereumDemoApp/Models/Vote.cs" Line="9" Column="27" />
+      <File FileName="EthereumDemoApp/Models/Vote.cs" Line="7" Column="10" />
+      <File FileName="EthereumDemoApp/ViewModels/HomeViewModel.cs" Line="13" Column="13" />
+      <File FileName="EthereumDemoApp/Models/Login.cs" Line="10" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.EthereumDemoApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.38C27435-D70F-4A89-B2FC-8A2F44DA998C">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.EthereumDemoApp.iOS>

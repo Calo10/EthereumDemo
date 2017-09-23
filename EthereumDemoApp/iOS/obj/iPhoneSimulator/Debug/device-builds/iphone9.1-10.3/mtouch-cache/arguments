@@ -29,6 +29,10 @@
 	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Connectivity.2.3.0/lib/Xamarin.iOS10/Plugin.Connectivity.dll \
 	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Media.3.0.1/lib/Xamarin.iOS10/Plugin.Media.Abstractions.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Media.3.0.1/lib/Xamarin.iOS10/Plugin.Media.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
@@ -326,6 +330,10 @@
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Connectivity.2.3.0/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
 	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Connectivity.2.3.0/lib/Xamarin.iOS10/Plugin.Connectivity.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Media.3.0.1/lib/Xamarin.iOS10/Plugin.Media.Abstractions.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Media.3.0.1/lib/Xamarin.iOS10/Plugin.Media.dll \
 	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \

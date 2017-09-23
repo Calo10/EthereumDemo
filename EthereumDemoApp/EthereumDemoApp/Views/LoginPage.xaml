@@ -17,7 +17,7 @@
                     <Entry Placeholder="Digitar password" TextColor="#4a4a4a" IsPassword="true"/>
                     <Button Text="Login" Command="{Binding LoginCommand}" />
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="No tiene una cuenta?"/>
+                        <Button Text="Registrar con foto" Command="{Binding EnterTakePictureCommand}"/>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>

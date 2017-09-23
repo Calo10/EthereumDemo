@@ -22,6 +22,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\HomeViewDetail.xaml.cs">
       <DependentUpon>HomeViewDetail.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\API_Dictionary.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />

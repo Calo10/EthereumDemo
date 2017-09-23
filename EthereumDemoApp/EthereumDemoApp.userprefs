@@ -1,21 +1,19 @@
 ﻿<Properties StartupConfiguration="{DC31C124-E8E0-451F-9FC5-B5D29E41BD27}|Default">
   <MonoDevelop.Ide.ItemProperties.EthereumDemoApp.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EthereumDemoApp/ViewModels/LoginViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EthereumDemoApp/Models/API_Dictionary.cs">
     <Files>
-      <File FileName="EthereumDemoApp/App.xaml" Line="19" Column="1" />
-      <File FileName="EthereumDemoApp/Views/MainPage.cs" Line="16" Column="56" />
-      <File FileName="EthereumDemoApp/ViewModels/BaseViewModel.cs" Line="1" Column="1" />
-      <File FileName="EthereumDemoApp/App.xaml.cs" Line="2" Column="29" />
-      <File FileName="EthereumDemoApp/Views/LoginPage.cs" Line="1" Column="1" />
-      <File FileName="EthereumDemoApp/Views/LoginPage.xaml" Line="23" Column="27" />
-      <File FileName="EthereumDemoApp/Views/LoginPage.xaml.cs" Line="6" Column="11" />
-      <File FileName="EthereumDemoApp/Services/CloudDataStore.cs" Line="22" Column="38" />
-      <File FileName="EthereumDemoApp/ViewModels/ItemDetailViewModel.cs" Line="13" Column="6" />
-      <File FileName="EthereumDemoApp/ViewModels/LoginViewModel.cs" Line="9" Column="5" />
-      <File FileName="EthereumDemoApp/Views/HomeViewMaster.xaml" Line="6" Column="1" />
-      <File FileName="EthereumDemoApp/Views/HomeViewMaster.xaml.cs" Line="1" Column="1" />
-      <File FileName="EthereumDemoApp/Views/HomeViewDetail.xaml" Line="6" Column="1" />
-      <File FileName="EthereumDemoApp/Views/HomeViewDetail.xaml.cs" Line="6" Column="11" />
+      <File FileName="Droid/MainActivity.cs" Line="27" Column="10" />
+      <File FileName="EthereumDemoApp/Views/TakePicturePage.xaml" Line="15" Column="1" />
+      <File FileName="EthereumDemoApp/Views/TakePicturePage.xaml.cs" Line="19" Column="1" />
+      <File FileName="EthereumDemoApp/Views/LoginPage.xaml" Line="25" Column="1" />
+      <File FileName="EthereumDemoApp/ViewModels/LoginViewModel.cs" Line="36" Column="47" />
+      <File FileName="EthereumDemoApp/Views/LoginPage.xaml.cs" Line="13" Column="35" />
+      <File FileName="Droid/obj/Debug/EthereumDemoApp.Droid.Views.LoginPage.xaml.g.cs" Line="28" Column="1" />
+      <File FileName="iOS/Main.cs" Line="21" Column="1" />
+      <File FileName="iOS/Info.plist" />
+      <File FileName="Droid/Resources/xml/file_paths.xml" Line="3" Column="50" />
+      <File FileName="EthereumDemoApp/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="EthereumDemoApp/Models/API_Dictionary.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
@@ -23,7 +21,9 @@
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.EthereumDemoApp.iOS>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/EthereumDemoApp/Views/TakePicturePage.xaml.cs" relfile="EthereumDemoApp/Views/TakePicturePage.xaml.cs" line="19" column="36" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

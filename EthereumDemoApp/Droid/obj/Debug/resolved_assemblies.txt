@@ -3,6 +3,11 @@
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/android/assets/Newtonsoft.Json.dll
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/android/assets/Plugin.Connectivity.Abstractions.dll
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/android/assets/Plugin.Connectivity.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/android/assets/Plugin.CurrentActivity.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/android/assets/Plugin.Media.Abstractions.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/android/assets/Plugin.Media.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/android/assets/Plugin.Permissions.Abstractions.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/android/assets/Plugin.Permissions.dll
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/android/assets/Xamarin.Android.Support.Animated.Vector.Drawable.dll
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/android/assets/Xamarin.Android.Support.Annotations.dll
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/android/assets/Xamarin.Android.Support.Compat.dll

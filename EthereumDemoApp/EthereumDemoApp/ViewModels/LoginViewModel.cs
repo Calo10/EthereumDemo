@@ -7,50 +7,51 @@ using EthereumDemoApp.Views;
 namespace EthereumDemoApp.ViewModels
 {
 
-        public class LoginViewModel : INotifyPropertyChanged
+    public class LoginViewModel : INotifyPropertyChanged
+    {
+
+        public ICommand LoginCommand { get; set; }
+        public ICommand EnterTakePictureCommand { get; set; }
+        
+        public LoginViewModel()
         {
+            InitComands();
+        }
 
-            public ICommand LoginCommand { get; set; }
-
-            public LoginViewModel()
+        private void Login()
+        {
+            App.Current.MainPage = new MasterDetailPage
             {
-                InitComands();
-            }
-
-            private void Login()
-            {
-                App.Current.MainPage = new MasterDetailPage
-                {
-                    Master = new HomeViewMaster(),
-                    Detail = new NavigationPage(new HomeViewDetail())
-                };
-
-            }
-
-
-            private void InitComands()
-            {
-
-                LoginCommand = new Command(Login);
-
-            }
-
-
-            #region  Property Change
-
-            public event PropertyChangedEventHandler PropertyChanged;
-
-            protected void NotifyPropertyChanged(String info)
-            {
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs(info));
-                }
-            }
-
-            #endregion
+                Master = new HomeViewMaster(),
+                Detail = new NavigationPage(new HomeViewDetail())
+            };
 
         }
+
+
+
+        private void InitComands()
+        {
+
+            LoginCommand = new Command(Login);
+        }
+
+
+        #region  Property Change
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void NotifyPropertyChanged(String info)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(info));
+            }
+        }
+
+        #endregion
+
+    }
 
 
 }

@@ -71,3 +71,11 @@
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/obj/iPhoneSimulator/Debug/EthereumDemoApp.iOS.exe
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/obj/iPhoneSimulator/Debug/EthereumDemoApp.iOS.pdb
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/obj/iPhoneSimulator/Debug/EthereumDemoApp.iOS.Views.HomeViewMaster.xaml.g.cs
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/obj/iPhoneSimulator/Debug/EthereumDemoApp.iOS.Views.HomeViewDetail.xaml.g.cs
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/obj/iPhoneSimulator/Debug/EthereumDemoApp.iOS.Views.TakePicturePage.xaml.g.cs
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Plugin.Media.Abstractions.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Plugin.Media.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Plugin.Media.Abstractions.pdb
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Plugin.Media.Abstractions.xml
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Plugin.Media.xml

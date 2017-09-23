@@ -180,13 +180,18 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Models\Connection.cs" />
     <Compile Include="Models\ProposalConnection.cs" />
     <Compile Include="Models\UserConnection.cs" />
+=======
+    <Compile Include="Models\HomeModel.cs" />
+>>>>>>> 3f5cb752e2529e8f51b60069ae1d6a6808319946
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -243,6 +248,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+<<<<<<< HEAD
+=======
+    <Folder Include="Views\Users\" />
+>>>>>>> 3f5cb752e2529e8f51b60069ae1d6a6808319946
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

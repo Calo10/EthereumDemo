@@ -1,24 +1,28 @@
 ﻿<Properties StartupConfiguration="{D8DC422F-9C8B-4F66-B49A-D9A156CAF3B5}|Default">
   <MonoDevelop.Ide.ItemProperties.EthereumDemoApp.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EthereumDemoApp/Models/Login.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EthereumDemoApp/Views/HomeViewDetail.xaml.cs">
     <Files>
       <File FileName="Droid/MainActivity.cs" Line="27" Column="10" />
       <File FileName="EthereumDemoApp/Views/TakePicturePage.xaml" Line="15" Column="1" />
       <File FileName="EthereumDemoApp/Views/TakePicturePage.xaml.cs" Line="19" Column="1" />
-      <File FileName="EthereumDemoApp/Views/LoginPage.xaml" Line="18" Column="72" />
-      <File FileName="EthereumDemoApp/ViewModels/LoginViewModel.cs" Line="22" Column="10" />
+      <File FileName="EthereumDemoApp/Views/LoginPage.xaml" Line="25" Column="1" />
+      <File FileName="EthereumDemoApp/ViewModels/LoginViewModel.cs" Line="72" Column="14" />
       <File FileName="EthereumDemoApp/Views/LoginPage.xaml.cs" Line="13" Column="35" />
       <File FileName="Droid/obj/Debug/EthereumDemoApp.Droid.Views.LoginPage.xaml.g.cs" Line="28" Column="1" />
       <File FileName="iOS/Main.cs" Line="21" Column="1" />
       <File FileName="Droid/Resources/xml/file_paths.xml" Line="3" Column="50" />
       <File FileName="EthereumDemoApp/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="EthereumDemoApp/Models/API_Dictionary.cs" Line="11" Column="9" />
+      <File FileName="EthereumDemoApp/Models/API_Dictionary.cs" Line="19" Column="1" />
       <File FileName="EthereumDemoApp/Models/Proposal.cs" Line="19" Column="25" />
-      <File FileName="EthereumDemoApp/Models/Member.cs" Line="14" Column="1" />
+      <File FileName="EthereumDemoApp/Models/Member.cs" Line="16" Column="6" />
       <File FileName="EthereumDemoApp/Models/Option.cs" Line="10" Column="32" />
       <File FileName="EthereumDemoApp/Models/Vote.cs" Line="7" Column="10" />
-      <File FileName="EthereumDemoApp/ViewModels/HomeViewModel.cs" Line="13" Column="13" />
-      <File FileName="EthereumDemoApp/Models/Login.cs" Line="10" Column="9" />
+      <File FileName="EthereumDemoApp/ViewModels/HomeViewModel.cs" Line="21" Column="14" />
+      <File FileName="EthereumDemoApp/Models/Login.cs" Line="31" Column="1" />
+      <File FileName="EthereumDemoApp/Views/HomeViewMaster.xaml" Line="5" Column="16" />
+      <File FileName="EthereumDemoApp/Views/HomeViewDetail.xaml" Line="6" Column="1" />
+      <File FileName="EthereumDemoApp/Views/Converts/DenyExpressionsConverter.cs" Line="26" Column="2" />
+      <File FileName="EthereumDemoApp/Views/HomeViewDetail.xaml.cs" Line="14" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

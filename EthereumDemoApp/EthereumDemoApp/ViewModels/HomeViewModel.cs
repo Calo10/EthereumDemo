@@ -5,6 +5,7 @@ using Xamarin.Forms;
 using EthereumDemoApp.Views;
 using EthereumDemoApp.Models;
 using System.Windows.Input;
+using System.Collections.ObjectModel;
 
 namespace EthereumDemoApp.ViewModels
 {
@@ -19,7 +20,7 @@ namespace EthereumDemoApp.ViewModels
             set
             {
                 _isBusy = value;
-                OnPropertyChanged("IsBusy");
+                NotifyPropertyChanged("IsBusy");
             }
         }
 
@@ -33,7 +34,7 @@ namespace EthereumDemoApp.ViewModels
             set
             {
                 _lstProposals = value;
-                OnPropertyChanged("lstProposals");
+                NotifyPropertyChanged("lstProposals");
             }
         }
 

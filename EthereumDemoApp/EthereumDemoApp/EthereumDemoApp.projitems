@@ -29,6 +29,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Vote.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\HomeViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Login.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Converts\DenyExpressionsConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />

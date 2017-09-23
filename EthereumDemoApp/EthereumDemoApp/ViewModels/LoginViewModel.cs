@@ -57,7 +57,7 @@ namespace EthereumDemoApp.ViewModels
             
             Member member = loginM.ExecuteLogin(email,pass);
 
-            if(member != null){
+            if(member.email != null){
 
                 App.Current.MainPage = new MasterDetailPage
                 {

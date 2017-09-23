@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EthereumWeb.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,9 +11,23 @@ namespace EthereumWeb.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            HomeModel modelo = new HomeModel();
+            return View(modelo);
+        }
 
-            return View();
+        public ActionResult Login(HomeModel Data)
+        {
+            var email = Data.Email;
+            var password = Data.Password;
+
+            if (ModelState.IsValid)
+            {
+                // ir al Back
+            }else
+            {
+                return View("Index", Data);
+            }
+            return View("Index", Data);
         }
     }
 }

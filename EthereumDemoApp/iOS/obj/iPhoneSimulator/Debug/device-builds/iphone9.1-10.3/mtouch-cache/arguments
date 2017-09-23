@@ -21,9 +21,11 @@
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/mtouch-symbols.list \
 	--dsym=no \
 	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Microsoft.CSharp.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
-	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll \
 	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Connectivity.2.3.0/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
 	-r \
@@ -36,6 +38,8 @@
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.IO.Compression.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Net.Http.dll \
 	-r \
@@ -325,7 +329,7 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r \
-	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll \
 	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Connectivity.2.3.0/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
 	-r \

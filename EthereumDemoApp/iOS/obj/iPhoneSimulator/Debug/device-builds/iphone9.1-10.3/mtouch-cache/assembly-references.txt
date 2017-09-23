@@ -30,3 +30,17 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Linq.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Reflection.Extensions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Text.RegularExpressions.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Resources.ResourceManager.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Runtime.Numerics.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/System.Numerics.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Xml.XmlDocument.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Xml.XDocument.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/System.Xml.Linq.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Runtime.Serialization.Primitives.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.ComponentModel.TypeConverter.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Runtime.Serialization.Formatters.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Text.Encoding.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Reflection.Primitives.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Text.Encoding.Extensions.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Microsoft.CSharp.dll

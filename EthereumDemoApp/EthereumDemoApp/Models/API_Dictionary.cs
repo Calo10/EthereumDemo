@@ -4,17 +4,11 @@ using Xamarin.Forms;
 
 namespace EthereumDemoApp.Models
 {
-    public class API_Dictionary : ContentPage
+    public static class API_Dictionary 
     {
-        public API_Dictionary()
-        {
-            Content = new StackLayout
-            {
-                Children = {
-                    new Label { Text = "Hello ContentPage" }
-                }
-            };
-        }
+       
+
+
     }
 }
 

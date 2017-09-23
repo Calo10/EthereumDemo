@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{DC31C124-E8E0-451F-9FC5-B5D29E41BD27}|Default">
   <MonoDevelop.Ide.ItemProperties.EthereumDemoApp.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EthereumDemoApp/Models/API_Dictionary.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EthereumDemoApp/Models/Vote.cs">
     <Files>
       <File FileName="Droid/MainActivity.cs" Line="27" Column="10" />
       <File FileName="EthereumDemoApp/Views/TakePicturePage.xaml" Line="15" Column="1" />
@@ -10,10 +10,13 @@
       <File FileName="EthereumDemoApp/Views/LoginPage.xaml.cs" Line="13" Column="35" />
       <File FileName="Droid/obj/Debug/EthereumDemoApp.Droid.Views.LoginPage.xaml.g.cs" Line="28" Column="1" />
       <File FileName="iOS/Main.cs" Line="21" Column="1" />
-      <File FileName="iOS/Info.plist" />
       <File FileName="Droid/Resources/xml/file_paths.xml" Line="3" Column="50" />
       <File FileName="EthereumDemoApp/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="EthereumDemoApp/Models/API_Dictionary.cs" Line="1" Column="1" />
+      <File FileName="EthereumDemoApp/Models/API_Dictionary.cs" Line="11" Column="9" />
+      <File FileName="EthereumDemoApp/Models/Proposal.cs" Line="24" Column="1" />
+      <File FileName="EthereumDemoApp/Models/Member.cs" Line="9" Column="26" />
+      <File FileName="EthereumDemoApp/Models/Option.cs" Line="10" Column="32" />
+      <File FileName="EthereumDemoApp/Models/Vote.cs" Line="9" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />

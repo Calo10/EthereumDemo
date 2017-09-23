@@ -30,5 +30,3 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Linq.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Reflection.Extensions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Text.RegularExpressions.dll
-/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Media.3.0.1/lib/Xamarin.iOS10/Plugin.Media.Abstractions.dll
-/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Media.3.0.1/lib/Xamarin.iOS10/Plugin.Media.dll

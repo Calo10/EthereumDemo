@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/bin/Debug/EthereumDemoApp.Droid.dll
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/bin/Debug/EthereumDemoApp.Droid.pdb
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/bin/Debug/com.companyname.EthereumDemoApp.apk
@@ -95,3 +96,41 @@
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/res/xml/file_paths.xml
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/bin/Debug/Plugin.Permissions.dll.mdb
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/bin/Debug/Plugin.Media.dll.mdb
+=======
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\EthereumDemoApp.Droid.csprojResolveAssemblyReference.cache
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.Annotations.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.Compat.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.Vector.Drawable.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.Animated.Vector.Drawable.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.Core.UI.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.Core.Utils.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.Media.Compat.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.Fragment.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.Transition.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.RecyclerView.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.AppCompat.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.Design.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.v4.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.CardView.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.Palette.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.MediaRouter.dll.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\dda502ec.proguard.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\f291fecb.proguard.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\proguard\8f1de9cb0.txt
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\8f1de9cb.proguard.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\proguard\a35ed7280.txt
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\a35ed728.proguard.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\66b78e27.proguard.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\60bb5a27.proguard.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\fab25ab7.proguard.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\9d822774.proguard.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\proguard\b76e0d310.txt
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\b76e0d31.proguard.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\6ce5e490.proguard.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\proguard\acdd43380.txt
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\acdd4338.proguard.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\5379ba9d.proguard.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\3d49bfb2.proguard.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\2da19e7d.proguard.stamp
+D:\PERSONAL\Projects\EthereumDemo\EthereumDemoApp\Droid\obj\Debug\XbdMerge\c2195535.proguard.stamp
+>>>>>>> 7ddb12832eb437b5cff6c701eff07c7b8e37fc2f

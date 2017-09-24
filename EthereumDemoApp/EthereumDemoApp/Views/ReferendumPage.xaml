@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="EthereumDemoApp.Views.ReferendumPage">
+        <StackLayout Padding="20" HorizontalOptions="CenterAndExpand">
+            <StackLayout Margin="0,25" HorizontalOptions="CenterAndExpand">
+                <Label Text="Votacion de Referendum" Font="Bold, 20" TextColor="Navy" HorizontalOptions="Center"/>
+            </StackLayout>
+             <StackLayout>
+                <Label Text="Descripcion de la votacion" Font="Italic, 16"  HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="SI" Command="{Binding SetReferendumCommand}" CommandParameter="SI" HeightRequest="150" WidthRequest="150" TextColor="White" HorizontalOptions="Center" BackgroundColor="Teal"/>
+                <Button Text="NO" Command="{Binding SetReferendumCommand}" CommandParameter="NO" HeightRequest="150" WidthRequest="150" TextColor="White" HorizontalOptions="Center" BackgroundColor="Maroon"/>
+            </StackLayout>
+            <StackLayout Margin="0,40">
+                <Label Text="{Binding RefSelected}" Font="Bold, 50" HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+                <Button Text="Enviar Votacion" Command="{Binding SendVotationCommand}" CommandParameter="2"/>
+            </StackLayout>
+        </StackLayout>
+</ContentPage>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="EthereumDemoApp.Views.ResultPage">
+	 <StackLayout>
+        <Label Text="Votacion de Papeleta" Font="Bold, 20"  HorizontalOptions="Center"/>
+        <StackLayout>
+            <Label Text="Lista de Votaciones" Font="Italic, 16"  HorizontalOptions="Center"/>
+        </StackLayout>
+        <!-- List proposal-->
+        <ListView ItemsSource="{Binding lstResults}" 
+                    SeparatorColor="White" 
+                    BackgroundColor="#FFF" 
+                    HasUnevenRows="True" 
+                    HorizontalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell >
+                        <StackLayout IsClippedToBounds="True">
+                            <Grid RowSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="65"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Description}" Font="Bold, 20" HorizontalOptions="Start"/>
+                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding NumberOfVotes}" Font="Bold, 20" HorizontalOptions="EndAndExpand"/>
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

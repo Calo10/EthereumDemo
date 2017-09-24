@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="EthereumDemoApp.Views.MultiplePage">
+	<StackLayout>
+        <Label Text="Votacion de Opcion Multiple"  Font="Bold, 20" HorizontalOptions="Center"/>
+         <StackLayout>
+            <Label Text="Descripcion de la votacion" Font="Italic, 16"  HorizontalOptions="Center"/>
+        </StackLayout>
+         <!-- List proposal-->
+            <ListView ItemsSource="{Binding lstProposalsOptions}" 
+                        SeparatorColor="White" 
+                        BackgroundColor="#FFF" 
+                        HasUnevenRows="True" 
+                        HorizontalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout IsClippedToBounds="True">
+                                <Grid RowSpacing="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="0"  Text="{Binding Description}" Font="Bold, 20" TextColor="Navy" HorizontalOptions="Start"/>
+                                    <Switch Grid.Row="0" Grid.Column="1" IsToggled="{Binding Checked}" HorizontalOptions="EndAndExpand"/>
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+            <Button Text="Enviar Votacion" Command="{Binding SendVotationCommand}" CommandParameter="3"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

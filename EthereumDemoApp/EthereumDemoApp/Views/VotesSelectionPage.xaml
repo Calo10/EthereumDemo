@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Name="VotesSelectionPage"
+    x:Class="EthereumDemoApp.Views.VotesSelectionPage">
+	 <StackLayout>
+        <Label Text="Votacion de Papeleta" Font="Bold, 20"  HorizontalOptions="Center"/>
+        <StackLayout>
+            <Label Text="Lista de Votaciones" Font="Italic, 16"  HorizontalOptions="Center"/>
+        </StackLayout>
+        <!-- List proposal-->
+        <ListView ItemsSource="{Binding lstProposals}" 
+                    SeparatorColor="White" 
+                    BackgroundColor="#FFF" 
+                    HasUnevenRows="True" 
+                    HorizontalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell >
+                        <StackLayout IsClippedToBounds="True">
+                            <Grid RowSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="65"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding ProposalName}" Font="Bold, 20" HorizontalOptions="Start"/>
+                                <Image Grid.Row="0" Grid.Column="1"  Source="blue_checked_icon.png" HorizontalOptions="EndAndExpand">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.SelectProposalCommand, Source={x:Reference VotesSelectionPage}}" 
+                                                                  CommandParameter="{Binding .}"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

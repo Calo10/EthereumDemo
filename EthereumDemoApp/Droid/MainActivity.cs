@@ -8,6 +8,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Plugin.Permissions;
+using Acr.UserDialogs;
+using Xamarin.Forms;
 
 namespace EthereumDemoApp.Droid
 {
@@ -16,6 +18,9 @@ namespace EthereumDemoApp.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
+            //Added to Acr UserDialogs to work
+            UserDialogs.Init(() => (Activity)Forms.Context);
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 

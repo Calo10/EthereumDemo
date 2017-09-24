@@ -21,6 +21,14 @@
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/mtouch-symbols.list \
 	--dsym=no \
 	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Acr.Support.2.1.0/lib/Xamarin.iOS10/Acr.Support.iOS.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Acr.UserDialogs.6.5.1/lib/Xamarin.iOS10/Acr.UserDialogs.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Acr.UserDialogs.6.5.1/lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/BTProgressHUD.1.2.0.5/lib/Xamarin.iOS10/BTProgressHUD.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Microsoft.CSharp.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
@@ -34,6 +42,8 @@
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Media.3.0.1/lib/Xamarin.iOS10/Plugin.Media.Abstractions.dll \
 	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Media.3.0.1/lib/Xamarin.iOS10/Plugin.Media.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Splat.2.0.0/lib/Xamarin.iOS10/Splat.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
@@ -329,6 +339,14 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Acr.Support.2.1.0/lib/Xamarin.iOS10/Acr.Support.iOS.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Acr.UserDialogs.6.5.1/lib/Xamarin.iOS10/Acr.UserDialogs.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Acr.UserDialogs.6.5.1/lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/BTProgressHUD.1.2.0.5/lib/Xamarin.iOS10/BTProgressHUD.dll \
+	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll \
 	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Connectivity.2.3.0/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
@@ -338,6 +356,8 @@
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Media.3.0.1/lib/Xamarin.iOS10/Plugin.Media.Abstractions.dll \
 	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Media.3.0.1/lib/Xamarin.iOS10/Plugin.Media.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Splat.2.0.0/lib/Xamarin.iOS10/Splat.dll \
 	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \

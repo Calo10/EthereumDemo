@@ -4,6 +4,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using EthereumDemoApp.Views;
 using EthereumDemoApp.Models;
+using Acr.UserDialogs;
 
 namespace EthereumDemoApp.ViewModels
 {
@@ -57,25 +58,44 @@ namespace EthereumDemoApp.ViewModels
             
             Member member = loginM.ExecuteLogin(email,pass);
 
-            if(member.email != null){
+            if(member != null){
+
+                NavigationPage navigation = new NavigationPage(new HomeViewDetail());
+                navigation.Popped += Popped;
+                navigation.PoppedToRoot += PoppedToRoot;
 
                 App.Current.MainPage = new MasterDetailPage
                 {
                     Master = new HomeViewMaster(),
-                    Detail = new NavigationPage(new HomeViewDetail())
+                    Detail = navigation
                 };
-            }
-            else{
-
 
 
             }
+            else
+            {
 
-           
-
+                UserDialogs.Instance.Alert("No se encontro el Usuario", "Mensaje", "Aceptar");
+            }
         }
 
+        private void PoppedToRoot(object sender, NavigationEventArgs e)
+        {
+            ControlAplication();
+        }
 
+        private void Popped(object sender, NavigationEventArgs e)
+        {
+            if (((NavigationPage)((MasterDetailPage)App.Current.MainPage).Detail).CurrentPage.GetType() == typeof(HomeViewDetail) || ((NavigationPage)((MasterDetailPage)App.Current.MainPage).Detail).CurrentPage.GetType() == typeof(VotesSelectionPage))
+            {
+                ControlAplication();
+            }
+        }
+
+        private void ControlAplication()
+        {
+          ProposalViewModel.DeleteInstance();
+        }
 
         private void InitComands()
         {

@@ -44,3 +44,8 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Reflection.Primitives.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Facades/System.Text.Encoding.Extensions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.26/lib/mono/Xamarin.iOS/Microsoft.CSharp.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Acr.UserDialogs.6.5.1/lib/Xamarin.iOS10/Acr.UserDialogs.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/BTProgressHUD.1.2.0.5/lib/Xamarin.iOS10/BTProgressHUD.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Acr.UserDialogs.6.5.1/lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Splat.2.0.0/lib/Xamarin.iOS10/Splat.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Acr.Support.2.1.0/lib/Xamarin.iOS10/Acr.Support.iOS.dll

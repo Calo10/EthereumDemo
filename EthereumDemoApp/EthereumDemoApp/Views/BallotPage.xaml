@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Name="ResultPage"
+    xmlns:local="clr-namespace:EthereumDemoApp.Views"
+    x:Class="EthereumDemoApp.Views.BallotPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:DenyExpressionsConverter x:Key="cnvDenyExpressionsConverter"></local:DenyExpressionsConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Label Text="Votacion de Papeleta" Font="Bold, 20"  HorizontalOptions="Center"/>
+        <StackLayout>
+            <Label Text="Descripcion de la votacion" Font="Italic, 16"  HorizontalOptions="Center"/>
+        </StackLayout>
+        <!-- List proposal-->
+        <ListView ItemsSource="{Binding lstProposalsOptions}" 
+                    SeparatorColor="White" 
+                    BackgroundColor="#FFF" 
+                    HasUnevenRows="True" 
+                    HorizontalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout IsClippedToBounds="True">
+                            <Grid RowSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0"  Text="{Binding Description}" Font="Bold, 20" TextColor="Navy" HorizontalOptions="Start"/>
+                                <StackLayout Grid.Column="1" Grid.Row="0" Orientation="Horizontal" VerticalOptions="Start">
+                                    <Image Source="blue_checked_icon.png" IsVisible="{Binding Checked}" />
+                                    <Image Source="blue_unchecked_icon.png" IsVisible="{Binding Checked, Converter={StaticResource cnvDenyExpressionsConverter}}">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding Path=BindingContext.SelectBallotCommand, Source={x:Reference ResultPage}}" 
+                                                                      CommandParameter="{Binding IdOption}"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+            <Button Text="Enviar Votacion" Command="{Binding SendVotationCommand}" CommandParameter="1"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

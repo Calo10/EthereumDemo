@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	x:Class="EthereumDemoApp.Views.HomeViewDetail"
@@ -8,76 +8,43 @@
 			<local:DenyExpressionsConverter x:Key="cnvDenyExpressionsConverter"></local:DenyExpressionsConverter>
 		</ResourceDictionary>
 	</ContentPage.Resources>
-
-	<AbsoluteLayout VerticalOptions="FillAndExpand" 
-					HorizontalOptions="FillAndExpand">
-
-        <StackLayout Spacing="0" 
+    <StackLayout>
+          <StackLayout Margin="0,25" HorizontalOptions="CenterAndExpand">
+                <Label Text="Tus Votaciones" Font="Bold, 20" TextColor="Navy" HorizontalOptions="Center"/>
+            </StackLayout>
+        <StackLayout Spacing="20" 
 					Padding="0"
+                    Margin="20,200,20,0"
 					VerticalOptions="FillAndExpand" 
 					HorizontalOptions="FillAndExpand" 
-					BackgroundColor="#FFF"
-                    AbsoluteLayout.LayoutFlags="All" 
-					AbsoluteLayout.LayoutBounds="0,0,1,1">
+					BackgroundColor="#FFF">
 
 			<Button Text="Papeleta" 
-					Command="{Binding FilterByBallotCommand}" 
+					Command="{Binding FilterProposalsCommand}" 
+                    CommandParameter="1"
 					IsEnabled="{Binding IsBusy, Converter={StaticResource cnvDenyExpressionsConverter}}"
 					BackgroundColor="#fff" 
-					BorderColor="#268186" 
+					BorderColor="Teal" 
 					BorderWidth="2" 
 					BorderRadius="5"/>
 
 			<Button Text="Referendum" 
-					Command="{Binding FilterByReferendumCommand}" 
+					Command="{Binding FilterProposalsCommand}"
+                    CommandParameter="2"
 					IsEnabled="{Binding IsBusy, Converter={StaticResource cnvDenyExpressionsConverter}}"
 					BackgroundColor="#fff" 
-					BorderColor="#268186" 
+					BorderColor="Teal" 
 					BorderWidth="2" 
 					BorderRadius="5"/>
 
 			<Button Text="Opción Múltiple" 
-					Command="{Binding FilterByMultipleOptionCommand}" 
+					Command="{Binding FilterProposalsCommand}" 
+                    CommandParameter="3"
 					IsEnabled="{Binding IsBusy, Converter={StaticResource cnvDenyExpressionsConverter}}"
 					BackgroundColor="#fff" 
 					BorderColor="#268186" 
 					BorderWidth="2" 
 					BorderRadius="5"/>
-
-			<!-- List proposal-->
-            <ListView ItemsSource="{Binding lstProposals}" 
-						SeparatorColor="White" 
-						IsEnabled="{Binding IsBusy, Converter={StaticResource cnvDenyExpressionsConverter}}"
-                      	BackgroundColor="#FFF" 
-						HasUnevenRows="True" 
-						HorizontalOptions="FillAndExpand">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell Tapped="Cell_OnTapped">
-                            <StackLayout IsClippedToBounds="True">
-                                <Grid RowSpacing="0">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="*"/>
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="40"/>
-                                        <ColumnDefinition Width="*"/>
-                                    </Grid.ColumnDefinitions>
-                                </Grid>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-
 		</StackLayout>
-
-        <!--Loader-->
-        <ActivityIndicator IsVisible="True" 
-							IsRunning="{Binding IsBusy}" 
-							Color="{StaticResource Investment_ConstituteColor}" 
-                           	AbsoluteLayout.LayoutFlags="All" 
-							AbsoluteLayout.LayoutBounds="0.5,0.5,0.2,0.2"/>
-
-    </AbsoluteLayout>
+  </StackLayout>
 </ContentPage>

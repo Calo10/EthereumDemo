@@ -99,6 +99,10 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "EthereumDemoApp.Droid.dll" comes first in this list. */
 		"EthereumDemoApp.Droid.dll",
+		"Acr.Support.Android.dll",
+		"Acr.UserDialogs.dll",
+		"Acr.UserDialogs.Interface.dll",
+		"AndHUD.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
 		"Plugin.Connectivity.Abstractions.dll",
@@ -108,6 +112,7 @@ class MonoPackageManager_Resources {
 		"Plugin.Media.dll",
 		"Plugin.Permissions.Abstractions.dll",
 		"Plugin.Permissions.dll",
+		"Splat.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Annotations.dll",
 		"Xamarin.Android.Support.Compat.dll",

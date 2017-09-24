@@ -13,7 +13,7 @@
                 <StackLayout Margin="50,0">
                     <Label Text="Correo" TextColor="#9b9b9b"/>
                     <Entry Text="{Binding email}" Placeholder="Digitar identificacion"  TextColor="#4a4a4a"/>
-                    <Label Text="Password" TextColor="#9b9b9b"/>
+                    <Label Text="Token" TextColor="#9b9b9b"/>
                     <Entry Text="{Binding pass}"  Placeholder="Digitar password" TextColor="#4a4a4a" IsPassword="true"/>
                     <Button Text="Login" Command="{Binding LoginCommand}" />
                 

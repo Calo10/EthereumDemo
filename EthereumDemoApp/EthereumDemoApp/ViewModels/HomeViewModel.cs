@@ -42,11 +42,8 @@ namespace EthereumDemoApp.ViewModels
 
         #region Commands
 
-        public ICommand FilterByBallotCommand { get; private set; }
+        public ICommand FilterProposalsCommand { get; private set; }
 
-        public ICommand FilterByReferendumCommand { get; private set; }
-
-        public ICommand FilterByMultipleOptionCommand { get; private set; }
 
         #endregion
 
@@ -65,25 +62,16 @@ namespace EthereumDemoApp.ViewModels
 
         private void initCommands()
         {
-            FilterByBallotCommand = new Command(FilterByBallot); 
-            FilterByReferendumCommand = new Command(FilterByReferendum); 
-            FilterByMultipleOptionCommand = new Command(FilterByMultipleOption);   
+            FilterProposalsCommand = new Command(FilterProposals);  
         }
 
-        private void FilterByBallot()
+        private void FilterProposals(object opt)
         {
-
-        }
-        
-        private void FilterByReferendum()
-        {
- 
+            ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new VotesSelectionPage(Int32.Parse(opt.ToString())));
         }
 
-        private void FilterByMultipleOption()
-        {
+       
 
-        }
         #endregion
 
         #region  Property Changes

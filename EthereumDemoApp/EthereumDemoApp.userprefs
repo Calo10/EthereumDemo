@@ -11,24 +11,17 @@
       <File FileName="iOS/Main.cs" Line="17" Column="1" />
       <File FileName="EthereumDemoApp/ViewModels/LoginViewModel.cs" Line="89" Column="86" />
       <File FileName="EthereumDemoApp/Views/ResultsPage.cs" Line="8" Column="10" />
-      <File FileName="EthereumDemoApp/Views/ResultPage.xaml" Line="32" Column="37" />
+      <File FileName="EthereumDemoApp/Views/ResultPage.xaml" Line="36" Column="1" />
       <File FileName="EthereumDemoApp/Views/ResultPage.xaml.cs" Line="7" Column="11" />
-      <File FileName="EthereumDemoApp/Views/VotesSelectionPage.xaml" Line="42" Column="19" />
+      <File FileName="EthereumDemoApp/Views/VotesSelectionPage.xaml" Line="44" Column="1" />
       <File FileName="EthereumDemoApp/ViewModels/ResultViewModel.cs" Line="59" Column="10" />
       <File FileName="EthereumDemoApp/ViewModels/HomeViewModel.cs" Line="70" Column="13" />
       <File FileName="EthereumDemoApp/Views/VotesSelectionPage.xaml.cs" Line="16" Column="13" />
-      <File FileName="EthereumDemoApp/Views/BallotPage.xaml" Line="52" Column="13" />
-      <File FileName="EthereumDemoApp/Views/MultiplePage.xaml" Line="35" Column="103" />
+      <File FileName="EthereumDemoApp/Views/BallotPage.xaml" Line="56" Column="1" />
+      <File FileName="EthereumDemoApp/Views/MultiplePage.xaml" Line="39" Column="1" />
       <File FileName="EthereumDemoApp/Views/MultiplePage.xaml.cs" Line="20" Column="1" />
       <File FileName="EthereumDemoApp/Views/ReferendumPage.xaml.cs" Line="14" Column="55" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>lstProposals[0].ProposalName</Value>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.EthereumDemoApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.38C27435-D70F-4A89-B2FC-8A2F44DA998C">

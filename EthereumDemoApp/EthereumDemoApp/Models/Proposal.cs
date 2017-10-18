@@ -15,12 +15,37 @@ namespace EthereumDemoApp.Models
         public string ContracEthereumProposal { get; set; }
         public string ProposalName { get; set; }
         public string VotingOptions { get; set; }
-        public int TypeVoting { get; set; }
+        public int SecurityType { get; set; }
+        public int QuestionType { get; set; }
         public DateTime InitialDate { get; set; }
         public DateTime FinalDate { get; set; }
         public int AdvancedSearch { get; set; }
         public string Description { get; set; }
         public ObservableCollection<Option> Options { get; set; }
+
+        private string _status;
+        public string Status 
+        {
+            get
+            {
+                return _status;
+            }
+
+            set 
+            {
+                if(InitialDate > DateTime.Now)
+                {
+                    _status = "Votacion aun no ha abierto.";
+                }
+
+                if(FinalDate < DateTime.Now)
+                {
+                    _status = "Votacion cerrada.";
+                }
+            } 
+        
+        }
+
 
 
         public ObservableCollection<Proposal>  SearhProposalByUser(string email,int type)
@@ -31,7 +56,7 @@ namespace EthereumDemoApp.Models
                 var json = JsonConvert.SerializeObject(new
                 {
                     email = email,
-                    TypeVoting = type
+                    QuestionType = type
                 });
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 HttpResponseMessage response = client.PostAsync(uri, content).Result;
@@ -48,7 +73,8 @@ namespace EthereumDemoApp.Models
                 var uri = new Uri(API_Dictionary.ApiToVoted);
                 var json = JsonConvert.SerializeObject(new
                 {
-                    Email = email,
+                    Contract = Member.GetContract(User.GetInstance().Email),
+                    email = User.GetInstance().Email,
                     ContracEthereumProposal = contract,
                     Options = lstoptions
                 });

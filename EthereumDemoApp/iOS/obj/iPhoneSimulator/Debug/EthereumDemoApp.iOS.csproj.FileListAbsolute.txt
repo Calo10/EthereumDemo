@@ -92,3 +92,16 @@
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/obj/iPhoneSimulator/Debug/EthereumDemoApp.iOS.pdb
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/obj/iPhoneSimulator/Debug/EthereumDemoApp.iOS.Views.ResultPage.xaml.g.cs
 /Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/optimized/blue_unchecked_icon.png
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/optimized/lock.png
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Realm.DataBinding.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Realm.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Realm.Sync.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Remotion.Linq.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Realm.DataBinding.pdb
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.xml
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Remotion.Linq.xml
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Realm.pdb
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Realm.xml
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Realm.Sync.pdb
+/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Realm.Sync.xml

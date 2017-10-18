@@ -5,6 +5,8 @@ using Xamarin.Forms;
 using EthereumDemoApp.Views;
 using EthereumDemoApp.Models;
 using Acr.UserDialogs;
+using Realms;
+using System.Collections.Generic;
 
 namespace EthereumDemoApp.ViewModels
 {
@@ -45,6 +47,7 @@ namespace EthereumDemoApp.ViewModels
 
         public ICommand LoginCommand { get; set; }
         public ICommand EnterTakePictureCommand { get; set; }
+        public ICommand DeleteDataBaseCommand { get; set; }
 
         Login loginM = new Login();
         
@@ -53,23 +56,37 @@ namespace EthereumDemoApp.ViewModels
             InitComands();
         }
 
+       
+
         public void Login()
         {
             
-            Member member = loginM.ExecuteLogin(email,pass);
+            Member member = loginM.ExecuteLogin(pass);
 
             if(member != null){
 
-                NavigationPage navigation = new NavigationPage(new HomeViewDetail());
-                navigation.Popped += Popped;
-                navigation.PoppedToRoot += PoppedToRoot;
+                User.GetInstance().Email = member.email;
 
-                App.Current.MainPage = new MasterDetailPage
+                if (member.contract == "")
                 {
-                    Master = new HomeViewMaster(),
-                    Detail = navigation
-                };
+                    if(Member.validateIfExist(member.email)){
 
+                        EnterMain();
+
+                    }
+                    else{
+                        
+                        UserDialogs.Instance.Alert("No se puede accesar el Sistema", "Mensaje", "Aceptar");
+
+                    }
+                }
+                else{
+
+                    bool ans = Member.saveContract(member.contract,member.email);
+
+                    if(ans)
+                        EnterMain();
+                }
 
             }
             else
@@ -77,6 +94,23 @@ namespace EthereumDemoApp.ViewModels
 
                 UserDialogs.Instance.Alert("No se encontro el Usuario", "Mensaje", "Aceptar");
             }
+        }
+
+        private void EnterMain()
+        {
+            NavigationPage navigation = new NavigationPage(new HomeViewDetail());
+            navigation.Popped += Popped;
+            navigation.PoppedToRoot += PoppedToRoot;
+
+
+            App.Current.MainPage = new MasterDetailPage
+            {
+                Master = new HomeViewMaster(),
+                Detail = navigation
+            };
+
+            ((NavigationPage)((MasterDetailPage)App.Current.MainPage).Detail).BarBackgroundColor = Color.FromHex("CD201B");
+            ((NavigationPage)((MasterDetailPage)App.Current.MainPage).Detail).BarTextColor = Color.FromHex("FFFFFF");
         }
 
         private void PoppedToRoot(object sender, NavigationEventArgs e)
@@ -97,10 +131,29 @@ namespace EthereumDemoApp.ViewModels
           ProposalViewModel.DeleteInstance();
         }
 
+        private void DeleteDataBase()
+        {
+            var realm = Realm.GetInstance();
+
+            var allMembers = realm.All<Member>();
+
+           
+            using(var trans = realm.BeginWrite())
+            {
+                foreach (var item in allMembers)
+                {
+                    realm.Remove(item);
+                }
+                trans.Commit();
+            }
+
+        }
+
         private void InitComands()
         {
 
             LoginCommand = new Command(Login);
+            DeleteDataBaseCommand = new Command(DeleteDataBase);
         }
 
 

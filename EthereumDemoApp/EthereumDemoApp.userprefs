@@ -1,26 +1,20 @@
 ﻿<Properties StartupConfiguration="{D8DC422F-9C8B-4F66-B49A-D9A156CAF3B5}|Default">
   <MonoDevelop.Ide.ItemProperties.EthereumDemoApp.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EthereumDemoApp/Views/ReferendumPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EthereumDemoApp/Models/Proposal.cs">
     <Files>
-      <File FileName="EthereumDemoApp/Views/ReferendumPage.xaml" Line="24" Column="1" />
-      <File FileName="EthereumDemoApp/ViewModels/ProposalViewModel.cs" Line="196" Column="24" />
-      <File FileName="EthereumDemoApp/Models/Proposal.cs" Line="83" Column="9" />
-      <File FileName="EthereumDemoApp/Models/Member.cs" Line="19" Column="1" />
-      <File FileName="EthereumDemoApp/Models/Option.cs" Line="12" Column="34" />
-      <File FileName="EthereumDemoApp/Models/API_Dictionary.cs" Line="11" Column="37" />
+      <File FileName="EthereumDemoApp/ViewModels/LoginViewModel.cs" Line="88" Column="1" />
+      <File FileName="EthereumDemoApp/Models/Login.cs" Line="30" Column="1" />
+      <File FileName="EthereumDemoApp/Models/Proposal.cs" Line="82" Column="1" />
+      <File FileName="EthereumDemoApp/ViewModels/ProposalViewModel.cs" Line="138" Column="1" />
+      <File FileName="EthereumDemoApp/Models/Vote.cs" Line="13" Column="1" />
+      <File FileName="EthereumDemoApp/Models/User.cs" Line="25" Column="1" />
+      <File FileName="EthereumDemoApp/Models/API_Dictionary.cs" Line="12" Column="9" />
       <File FileName="iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="EthereumDemoApp/ViewModels/LoginViewModel.cs" Line="89" Column="86" />
-      <File FileName="EthereumDemoApp/Views/ResultsPage.cs" Line="8" Column="10" />
-      <File FileName="EthereumDemoApp/Views/ResultPage.xaml" Line="36" Column="1" />
-      <File FileName="EthereumDemoApp/Views/ResultPage.xaml.cs" Line="7" Column="11" />
-      <File FileName="EthereumDemoApp/Views/VotesSelectionPage.xaml" Line="44" Column="1" />
-      <File FileName="EthereumDemoApp/ViewModels/ResultViewModel.cs" Line="59" Column="10" />
-      <File FileName="EthereumDemoApp/ViewModels/HomeViewModel.cs" Line="70" Column="13" />
-      <File FileName="EthereumDemoApp/Views/VotesSelectionPage.xaml.cs" Line="16" Column="13" />
-      <File FileName="EthereumDemoApp/Views/BallotPage.xaml" Line="56" Column="1" />
-      <File FileName="EthereumDemoApp/Views/MultiplePage.xaml" Line="39" Column="1" />
-      <File FileName="EthereumDemoApp/Views/MultiplePage.xaml.cs" Line="20" Column="1" />
-      <File FileName="EthereumDemoApp/Views/ReferendumPage.xaml.cs" Line="14" Column="55" />
+      <File FileName="EthereumDemoApp/ViewModels/HomeViewModel.cs" Line="70" Column="1" />
+      <File FileName="EthereumDemoApp/Views/HomeViewDetail.xaml" Line="25" Column="46" />
+      <File FileName="EthereumDemoApp/Views/VotesSelectionPage.xaml.cs" Line="16" Column="1" />
+      <File FileName="EthereumDemoApp/Views/LoginPage.xaml" Line="11" Column="86" />
+      <File FileName="EthereumDemoApp/Models/Member.cs" Line="47" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -30,8 +24,13 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/EthereumDemoApp/Views/TakePicturePage.xaml.cs" relfile="EthereumDemoApp/Views/TakePicturePage.xaml.cs" line="19" column="36" />
-      <Breakpoint file="/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/EthereumDemoApp/ViewModels/LoginViewModel.cs" relfile="EthereumDemoApp/ViewModels/LoginViewModel.cs" line="91" column="1" />
-      <Breakpoint file="/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/EthereumDemoApp/ViewModels/LoginViewModel.cs" relfile="EthereumDemoApp/ViewModels/LoginViewModel.cs" line="89" column="1" />
+      <Breakpoint file="/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/EthereumDemoApp/Models/Proposal.cs" relfile="EthereumDemoApp/Models/Proposal.cs" line="74" column="1" />
+      <Breakpoint file="/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/EthereumDemoApp/Models/Member.cs" relfile="EthereumDemoApp/Models/Member.cs" line="47" column="1" />
+      <Breakpoint file="/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/EthereumDemoApp/Models/Member.cs" relfile="EthereumDemoApp/Models/Member.cs" line="23" column="1" />
+      <Breakpoint file="/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/EthereumDemoApp/ViewModels/LoginViewModel.cs" relfile="EthereumDemoApp/ViewModels/LoginViewModel.cs" line="64" column="1" />
+      <Breakpoint file="/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/EthereumDemoApp/Models/Login.cs" relfile="EthereumDemoApp/Models/Login.cs" line="28" column="1" />
+      <Breakpoint file="/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/EthereumDemoApp/ViewModels/LoginViewModel.cs" relfile="EthereumDemoApp/ViewModels/LoginViewModel.cs" line="136" column="1" />
+      <Breakpoint file="/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/EthereumDemoApp/Models/Proposal.cs" relfile="EthereumDemoApp/Models/Proposal.cs" line="82" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

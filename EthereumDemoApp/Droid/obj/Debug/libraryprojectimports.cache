@@ -9,6 +9,7 @@
     <ResolvedResourceDirectory>/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/__library_projects__/Plugin.CurrentActivity/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/__library_projects__/Plugin.Media/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/__library_projects__/Plugin.Permissions/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/__library_projects__/Realm.DataBinding/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/__library_projects__/Splat/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/__library_projects__/Xamarin.Android.Support.Design/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/__library_projects__/Xamarin.Android.Support.Transition/library_project_imports/res</ResolvedResourceDirectory>
@@ -27,6 +28,7 @@
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Plugin.CurrentActivity/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Plugin.Media/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Plugin.Permissions/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/Realm.DataBinding/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Splat/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Xamarin.Forms.Platform/library_project_imports/assets</ResolvedAssetDirectory>
@@ -40,6 +42,7 @@
     <ResolvedResourceDirectoryStamp>/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/__library_projects__/Plugin.CurrentActivity.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/__library_projects__/Plugin.Media.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/__library_projects__/Plugin.Permissions.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/__library_projects__/Realm.DataBinding.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/__library_projects__/Splat.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/__library_projects__/Xamarin.Android.Support.Design.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/Droid/obj/Debug/__library_projects__/Xamarin.Android.Support.Transition.stamp</ResolvedResourceDirectoryStamp>

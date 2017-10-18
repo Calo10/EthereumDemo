@@ -23,8 +23,16 @@
                                         <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
-                                    <Label Grid.Row="0" Grid.Column="0"  Text="{Binding Description}" Font="Bold, 20" TextColor="Navy" HorizontalOptions="Start"/>
-                                    <Switch Grid.Row="0" Grid.Column="1" IsToggled="{Binding Checked}" HorizontalOptions="EndAndExpand"/>
+                                    <Label Grid.Row="0" Grid.Column="0"  
+                                            Text="{Binding Description}" 
+                                            TextColor="#9b9b9b"
+                                            Font="Bold, 15" 
+                                            Margin="10,0,0,0"
+                                            HorizontalOptions="Start"/>
+                                    <Switch Grid.Row="0" Grid.Column="1" 
+                                            IsToggled="{Binding Checked}" 
+                                            Margin="0,0,10,0"
+                                            HorizontalOptions="EndAndExpand"/>
                                 </Grid>
                             </StackLayout>
                         </ViewCell>

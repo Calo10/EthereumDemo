@@ -5,17 +5,21 @@
     <ContentPage.Content>
         <StackLayout x:Name="stkContainer">
             <!--Logo Image-->
-            <StackLayout>
-                <Image Source=""/>
+            <StackLayout Margin="0,150,0,0" HeightRequest="100" WidthRequest="100">
+                <Image Source="lock.png" HeightRequest="100" WidthRequest="100">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding DeleteDataBaseCommand}" />
+                    </Image.GestureRecognizers>
+                </Image>
             </StackLayout>
             <!--Login Panel-->
-            <StackLayout Margin="0,200">
+            <StackLayout Margin="0,90">
                 <StackLayout Margin="50,0">
-                    <Label Text="Correo" TextColor="#9b9b9b"/>
-                    <Entry Text="{Binding email}" Placeholder="Digitar identificacion"  TextColor="#4a4a4a"/>
+                    <!--<Label Text="Correo" TextColor="#9b9b9b"/>
+                    <Entry Text="{Binding email}" Placeholder="Digitar identificacion"  TextColor="#4a4a4a"/>-->
                     <Label Text="Token" TextColor="#9b9b9b"/>
-                    <Entry Text="{Binding pass}"  Placeholder="Digitar password" TextColor="#4a4a4a" IsPassword="true"/>
-                    <Button Text="Login" Command="{Binding LoginCommand}" />
+                    <Entry Text="{Binding pass}"  Placeholder="Digitar token" TextColor="#4a4a4a" IsPassword="true"/>
+                    <Button Text="Login" Margin="0,50,0,0" Command="{Binding LoginCommand}" TextColor="#fff" Font="Bold" BackgroundColor="#CD201B"/>
                 
                 </StackLayout>
             </StackLayout>

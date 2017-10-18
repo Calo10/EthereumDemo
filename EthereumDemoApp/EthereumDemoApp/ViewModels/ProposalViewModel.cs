@@ -19,18 +19,20 @@ namespace EthereumDemoApp.ViewModels
 
         private ProposalViewModel(int? type)
         {
-
-           
+            try
+            {
                 InitCommand();
-                //filtrar
+
                 Proposal proposalM = new Proposal();
 
-                ObservableCollection<Proposal> proposal = proposalM.SearhProposalByUser("raykel18@gmail.com", Int32.Parse(type.ToString()));
+                ObservableCollection<Proposal> proposal = proposalM.SearhProposalByUser(User.GetInstance().Email, Int32.Parse(type.ToString()));
                 lstProposals = proposal;
 
-                //setOptions();
+            }
+            catch (Exception ex)
+            {
 
-
+            }
         }
 
         public static ProposalViewModel GetInstance(int? type)
@@ -131,21 +133,28 @@ namespace EthereumDemoApp.ViewModels
 
         private void SelectProposal(object opc)
         {
-            
-            lstProposalsOptions = new ObservableCollection<Option>();
-
-            Proposal prop = (Proposal)opc;
-
-            foreach (var item in lstProposals.Where(x=> x.ContracEthereumProposal != prop.ContracEthereumProposal))
+            try
             {
-                item.Checked = false;
+                lstProposalsOptions = new ObservableCollection<Option>();
+
+                Proposal prop = (Proposal)opc;
+
+                foreach (var item in lstProposals.Where(x => x.ContracEthereumProposal != prop.ContracEthereumProposal))
+                {
+                    item.Checked = false;
+                }
+
+                lstProposals.Where(x => x.ContracEthereumProposal == prop.ContracEthereumProposal).FirstOrDefault().Checked = true;
+
+                setOptions();
+
+                FilterProposalsOptions(prop.SecurityType);
+
             }
+            catch (Exception ex)
+            {
 
-            lstProposals.Where(x => x.ContracEthereumProposal == prop.ContracEthereumProposal).FirstOrDefault().Checked = true;
-
-            setOptions();
-
-            FilterProposalsOptions(prop.TypeVoting);
+            }
 
         }
 
@@ -167,7 +176,7 @@ namespace EthereumDemoApp.ViewModels
                         lstOpt.Add(item);
                     }
 
-                    res = proposalM.ToVoted("raykel18@gmail.com", prop.ContracEthereumProposal, lstOpt);
+                    res = proposalM.ToVoted(User.GetInstance().Email, prop.ContracEthereumProposal, lstOpt);
 
                     if (res)
                     {
@@ -211,7 +220,7 @@ namespace EthereumDemoApp.ViewModels
                     }
 
 
-                    res = proposalM.ToVoted("raykel18@gmail.com", prop.ContracEthereumProposal, lstOpt);
+                    res = proposalM.ToVoted(User.GetInstance().Email, prop.ContracEthereumProposal, lstOpt);
 
                     if(res)
                     {
@@ -242,7 +251,7 @@ namespace EthereumDemoApp.ViewModels
                         lstOpt.Add(item);
                     }
 
-                    res = proposalM.ToVoted("raykel18@gmail.com", prop.ContracEthereumProposal, lstOpt);
+                    res = proposalM.ToVoted(User.GetInstance().Email, prop.ContracEthereumProposal, lstOpt);
 
                     if (res)
                     {

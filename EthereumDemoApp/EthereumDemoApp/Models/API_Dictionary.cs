@@ -8,7 +8,7 @@ namespace EthereumDemoApp.Models
     {
 
 
-        public const string Base = "http://13.82.232.153/";
+        public const string Base = "http://raykel.eastus.cloudapp.azure.com/";
 
         public const string ApiLogin =  Base + "EthereumWeb/Api/Security/login";
 

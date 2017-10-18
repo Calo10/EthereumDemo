@@ -12,15 +12,14 @@ namespace EthereumDemoApp.Models
   
         public Login(){}
 
-        public Member ExecuteLogin(string email, string pass)
+        public Member ExecuteLogin(string pass)
         {
             using (HttpClient client = new HttpClient())
             {
                 var uri = new Uri(API_Dictionary.ApiLogin);
                 var json = JsonConvert.SerializeObject(new
                 {
-                    email = email,
-                    pass = pass
+                    token = pass
                 });
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 HttpResponseMessage response =  client.PostAsync(uri, content).Result;

@@ -4,9 +4,9 @@
     x:Name="VotesSelectionPage"
     x:Class="EthereumDemoApp.Views.VotesSelectionPage">
 	 <StackLayout>
-        <Label Text="Votacion de Papeleta" Font="Bold, 20"  HorizontalOptions="Center"/>
+        <Label Text="Votacion" Font="Bold, 20"  HorizontalOptions="Center"/>
         <StackLayout>
-            <Label Text="Lista de Votaciones" Font="Italic, 16"  HorizontalOptions="Center"/>
+            <Label Text="Lista de Votaciones" TextColor="#4a4a4a" Font="Italic, 16"  HorizontalOptions="Center"/>
         </StackLayout>
         <!-- List proposal-->
         <ListView ItemsSource="{Binding lstProposals}" 
@@ -20,19 +20,60 @@
                         <StackLayout IsClippedToBounds="True">
                             <Grid RowSpacing="0">
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="65"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="25"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="80"/>
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding ProposalName}" Font="Bold, 20" HorizontalOptions="Start"/>
-                                <Image Grid.Row="0" Grid.Column="1"  Source="blue_checked_icon.png" HorizontalOptions="EndAndExpand">
+                                <Label Grid.Row="0" Grid.Column="0" 
+                                        Text="{Binding ProposalName}" 
+                                        TextColor="#9b9b9b"
+                                        Font="Bold, 15" 
+                                        Margin="10,0,0,0"
+                                        HorizontalOptions="Start" 
+                                        VerticalOptions="Center"/>
+                                <Image Grid.Row="0" Grid.Column="1" Margin="0,0,10,0" Source="blue_unchecked_icon.png" HorizontalOptions="EndAndExpand" VerticalOptions="Center">
                                     <Image.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding Path=BindingContext.SelectProposalCommand, Source={x:Reference VotesSelectionPage}}" 
                                                                   CommandParameter="{Binding .}"/>
                                     </Image.GestureRecognizers>
                                 </Image>
+                                <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                                    <Label 
+                                        Text="Fecha Inicio:" 
+                                        TextColor="#CD201B"
+                                        Font="Bold, 10" 
+                                        Margin="10,0,0,0"
+                                        HorizontalOptions="Start" 
+                                        VerticalOptions="Center"/>
+                                    <Label 
+                                        Text="{Binding InitialDate, StringFormat='{0:mm/dd/yyyy}'}" 
+                                        TextColor="#CD201B"
+                                        Font="10" 
+                                        Margin="10,0,0,0"
+                                        HorizontalOptions="Start" 
+                                        VerticalOptions="Center"/>
+                                </StackLayout>
+                                 <StackLayout Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
+                                    <Label 
+                                        Text="Fecha Final:" 
+                                        TextColor="#CD201B"
+                                        Font="Bold, 10" 
+                                        Margin="10,0,0,0"
+                                        HorizontalOptions="Start" 
+                                        VerticalOptions="Center"/>
+                                    <Label 
+                                        Text="{Binding FinalDate, StringFormat='{0:mm/dd/yyyy}'}" 
+                                        TextColor="#CD201B"
+                                        Font="10" 
+                                        Margin="10,0,0,0"
+                                        HorizontalOptions="Start" 
+                                        VerticalOptions="Center"/>
+                                </StackLayout>
+
                             </Grid>
                         </StackLayout>
                     </ViewCell>

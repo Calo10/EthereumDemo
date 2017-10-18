@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="EthereumDemoApp.Views.HomeViewMaster"
-    Title="Test">
+    BackgroundColor="#CD201B"
+    Title="Sistema de Votacion">
 	<ContentPage.Content>
 	</ContentPage.Content>
 </ContentPage>

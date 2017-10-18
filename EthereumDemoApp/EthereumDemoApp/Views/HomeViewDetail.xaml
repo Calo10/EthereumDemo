@@ -10,39 +10,45 @@
 	</ContentPage.Resources>
     <StackLayout>
           <StackLayout Margin="0,25" HorizontalOptions="CenterAndExpand">
-                <Label Text="Tus Votaciones" Font="Bold, 20" TextColor="Navy" HorizontalOptions="Center"/>
+                <Label Text="Tus Votaciones!" Font="Bold, 30" TextColor="#4a4a4a" HorizontalOptions="Center"/>
             </StackLayout>
         <StackLayout Spacing="20" 
 					Padding="0"
-                    Margin="20,200,20,0"
+                    Margin="20,100,20,0"
 					VerticalOptions="FillAndExpand" 
 					HorizontalOptions="FillAndExpand" 
 					BackgroundColor="#FFF">
 
 			<Button Text="Papeleta" 
+                    TextColor="#fff"
+                    Font="Bold,20"
 					Command="{Binding FilterProposalsCommand}" 
                     CommandParameter="1"
 					IsEnabled="{Binding IsBusy, Converter={StaticResource cnvDenyExpressionsConverter}}"
-					BackgroundColor="#fff" 
-					BorderColor="Teal" 
+					BackgroundColor="#CD201B" 
+					BorderColor="#9b9b9b" 
 					BorderWidth="2" 
 					BorderRadius="5"/>
 
 			<Button Text="Referendum" 
+                    TextColor="#fff"
+                    Font="Bold,20"
 					Command="{Binding FilterProposalsCommand}"
                     CommandParameter="2"
 					IsEnabled="{Binding IsBusy, Converter={StaticResource cnvDenyExpressionsConverter}}"
-					BackgroundColor="#fff" 
-					BorderColor="Teal" 
+					BackgroundColor="#CD201B" 
+					BorderColor="#9b9b9b" 
 					BorderWidth="2" 
 					BorderRadius="5"/>
 
 			<Button Text="Opción Múltiple" 
+                    TextColor="#fff"
+                    Font="Bold,20"
 					Command="{Binding FilterProposalsCommand}" 
                     CommandParameter="3"
 					IsEnabled="{Binding IsBusy, Converter={StaticResource cnvDenyExpressionsConverter}}"
-					BackgroundColor="#fff" 
-					BorderColor="#268186" 
+					BackgroundColor="#CD201B" 
+					BorderColor="#9b9b9b" 
 					BorderWidth="2" 
 					BorderRadius="5"/>
 		</StackLayout>

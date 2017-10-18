@@ -20,6 +20,9 @@
 	--symbollist \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/mtouch-symbols.list \
 	--dsym=no \
+	--cxx \
+	--gcc_flags \
+	'-L/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Realm.1.6.0/build/../native/ios/universal -lrealm-wrappers -lz -framework Security' \
 	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Acr.Support.2.1.0/lib/Xamarin.iOS10/Acr.Support.iOS.dll \
 	-r \
@@ -43,6 +46,10 @@
 	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Media.3.0.1/lib/Xamarin.iOS10/Plugin.Media.dll \
 	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Realm.DataBinding.1.2.0/lib/Xamarin.iOS10/Realm.DataBinding.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Remotion.Linq.2.1.1/lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll \
+	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Splat.2.0.0/lib/Xamarin.iOS10/Splat.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
@@ -52,6 +59,8 @@
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.IO.Compression.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Net.Http.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/System.Runtime.CompilerServices.Unsafe.4.3.0/lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
 	-r \
@@ -339,6 +348,10 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Realm.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/iOS/bin/iPhoneSimulator/Debug/Realm.Sync.dll \
+	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Acr.Support.2.1.0/lib/Xamarin.iOS10/Acr.Support.iOS.dll \
 	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Acr.UserDialogs.6.5.1/lib/Xamarin.iOS10/Acr.UserDialogs.dll \
@@ -357,7 +370,13 @@
 	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xam.Plugin.Media.3.0.1/lib/Xamarin.iOS10/Plugin.Media.dll \
 	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Realm.DataBinding.1.2.0/lib/Xamarin.iOS10/Realm.DataBinding.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Remotion.Linq.2.1.1/lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll \
+	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Splat.2.0.0/lib/Xamarin.iOS10/Splat.dll \
+	-r \
+	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/System.Runtime.CompilerServices.Unsafe.4.3.0/lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll \
 	-r \
 	/Users/carlosmendez/OutOfCloud/Projects/EthereumDemo/EthereumDemoApp/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \

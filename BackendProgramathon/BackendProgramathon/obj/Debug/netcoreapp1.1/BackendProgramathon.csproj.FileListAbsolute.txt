@@ -1,0 +1,9 @@
+c:\users\jose\documents\visual studio 2017\Projects\BackendProgramathon\BackendProgramathon\bin\Debug\netcoreapp1.1\BackendProgramathon.deps.json
+c:\users\jose\documents\visual studio 2017\Projects\BackendProgramathon\BackendProgramathon\bin\Debug\netcoreapp1.1\BackendProgramathon.runtimeconfig.json
+c:\users\jose\documents\visual studio 2017\Projects\BackendProgramathon\BackendProgramathon\bin\Debug\netcoreapp1.1\BackendProgramathon.runtimeconfig.dev.json
+c:\users\jose\documents\visual studio 2017\Projects\BackendProgramathon\BackendProgramathon\bin\Debug\netcoreapp1.1\BackendProgramathon.dll
+c:\users\jose\documents\visual studio 2017\Projects\BackendProgramathon\BackendProgramathon\bin\Debug\netcoreapp1.1\BackendProgramathon.pdb
+c:\users\jose\documents\visual studio 2017\Projects\BackendProgramathon\BackendProgramathon\obj\Debug\netcoreapp1.1\BackendProgramathon.csprojResolveAssemblyReference.cache
+c:\users\jose\documents\visual studio 2017\Projects\BackendProgramathon\BackendProgramathon\obj\Debug\netcoreapp1.1\BackendProgramathon.AssemblyInfo.cs
+c:\users\jose\documents\visual studio 2017\Projects\BackendProgramathon\BackendProgramathon\obj\Debug\netcoreapp1.1\BackendProgramathon.dll
+c:\users\jose\documents\visual studio 2017\Projects\BackendProgramathon\BackendProgramathon\obj\Debug\netcoreapp1.1\BackendProgramathon.pdb

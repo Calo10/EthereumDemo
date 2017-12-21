@@ -8,7 +8,7 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-feature android:name="android.hardware.camera" android:required="false" />
   <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
-  <application android:label="EthereumDemoApp" android:name="md5d5ca63f4ce50b633236e42f13c158732.MainApplication" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+  <application android:label="YoElijo" android:icon="@drawable/icon" android:name="md5d5ca63f4ce50b633236e42f13c158732.MainApplication" android:allowBackup="true" android:debuggable="true">
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="EthereumDemoApp.Droid" android:theme="@style/MyTheme" android:name="md5d5ca63f4ce50b633236e42f13c158732.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

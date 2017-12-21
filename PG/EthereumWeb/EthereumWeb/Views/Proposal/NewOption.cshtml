@@ -1,0 +1,52 @@
+﻿@model EthereumWeb.Models.NewOptionModel
+@{
+    ViewBag.Title = "Votaciones - Ingresar opcion";
+}
+
+<h2>Agregar opcion para @Model.ProposalName</h2>
+
+<div class="ROW">
+    <div class="col-md-6">
+        @*Registrar nuevo opcion*@
+        <div class="panel panel-default">
+            <div class="panel-body">
+                @using (Html.BeginForm("RegisterOption", "Proposal"))
+                {
+                    <div class="fieldset">Nueva opción:</div>
+                    <div class="fieldset">@Html.TextBoxFor(model => model.OptionName)</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.OptionName)</div>
+
+                    <br /><br /><br /><br />
+                    <div class="fieldset" style="display:none">@Html.TextBoxFor(model => model.ProposalId, new { @Value = @Model.ProposalId })</div>
+                    <div class="fieldset" style="display:none">@Html.TextBoxFor(model => model.ProposalName, new { @Value = @Model.ProposalName })</div>
+
+                    <input type="submit" class="btn-sm btn-primary" value="Registrar" />
+
+                }
+            </div>
+        </div>
+    </div> @*Registrar nuevo opcion*@
+
+    <div class="col-md-6">
+        <label>Opciones agregadas:</label>
+        <ul>
+            @foreach (var _proposal in Model.Proposals)
+            {
+                if (_proposal.ContracEthereumProposal == Model.ProposalId)
+                {
+                    foreach (var _option in _proposal.Options)
+                    {
+                        <li><label>@_option.Description</label></li>
+                    }
+
+                }
+            }
+        </ul>
+    </div>
+</div>
+<div class="row">&nbsp;</div>
+
+
+
+
+

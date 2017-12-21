@@ -1,0 +1,7 @@
+﻿
+@{
+    ViewBag.Title = "RegisterUserProposalSumit";
+}
+
+<h2>Exitoso</h2>
+

@@ -1,0 +1,89 @@
+﻿@model EthereumWeb.Models.ProposalModel
+@{
+    ViewBag.Title = "Index";
+   
+}
+
+
+<h2>Seleccion de Votacion</h2>
+<h3><strong>Propuesta:</strong> @Model.ProposalName</h3>
+<h4><strong>Descripción:</strong> @Model.Description</h4>
+<div class="row">    &nbsp;</div>
+<div class="row">    &nbsp;</div>
+@if (Model.FinalDate < DateTime.Now || Model.InitialDate > DateTime.Now)
+{
+
+    <label class="text-danger">Votación no disponible</label>
+
+}
+else
+{
+    if (Model.Options.Count() == 0)
+    {
+
+        <label class="text-danger">No contiene Opciones</label>
+    }
+    else
+    {
+        if (Model.TypeVoting == 1 || Model.TypeVoting == 2)
+        {
+
+            using (Html.BeginForm("Index", "Votes"))
+            {
+            
+                foreach (var item in Model.Options)
+                {
+                    <div class="checkbox">
+                        <label>
+                            <input type="radio"
+                                    name="SelectedOptions"
+                                    value="@item.IdOption" /> @item.Description
+                            </label>
+                        </div>
+                }
+
+                <div class="form-group text-center">
+                    <input type="submit" class="btn btn-primary" value="Submit" />
+                </div>
+            }
+
+        }
+
+
+        using (Html.BeginForm("Index", "Votes"))
+        {
+
+
+            if (Model.TypeVoting == 3)
+            {
+                foreach (var item in Model.Options)
+                {
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"
+                                   name="SelectedOptions"
+                                   value="@item.IdOption" /> @item.Description
+                            </label>
+                        </div>
+                }
+
+                <div class="form-group text-center">
+                    <input type="submit" class="btn btn-primary" value="Submit" />
+                </div>
+
+            }
+
+        }
+
+    }
+}
+
+
+
+<script type="text/javascript">
+
+
+
+
+</script>
+

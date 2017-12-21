@@ -1,0 +1,38 @@
+﻿@model List<EthereumWeb.Models.UserModel>
+
+@{
+    ViewBag.Title = "Votaciones - Usuarios registrados";
+}
+
+<h2>Usuarios registrados</h2>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Correo electronico</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+    </tr>
+    @foreach (var _user in Model)
+    {
+        <tr>
+            <td>@_user.Email</td>
+            <td>@_user.UserName</td>
+            <td>@_user.UserLastName</td>
+            <td class="text-center"><a href="~/User/Modify?m=@_user.Email"><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td class="text-center">
+                @if (_user.IsProcessActive)
+                {
+                    <label class="text-danger">Processo activo</label>
+                }
+                else
+                {
+                    <a href="~/User/Delete?m=@_user.Email"><span class="glyphicon glyphicon-trash"></span></a>
+                }
+            </td>
+
+        </tr>
+    }
+</table>
+<a href="~/User/NewUser">Crear nuevo usuario</a>

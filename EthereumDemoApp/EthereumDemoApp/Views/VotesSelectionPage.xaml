@@ -35,7 +35,7 @@
                                         Margin="10,0,0,0"
                                         HorizontalOptions="Start" 
                                         VerticalOptions="Center"/>
-                                <Image Grid.Row="0" Grid.Column="1" Margin="0,0,10,0" Source="blue_unchecked_icon.png" HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+                                <Image Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Margin="0,0,10,0" Source="blue_unchecked_icon.png" HorizontalOptions="EndAndExpand" VerticalOptions="Center">
                                     <Image.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding Path=BindingContext.SelectProposalCommand, Source={x:Reference VotesSelectionPage}}" 
                                                                   CommandParameter="{Binding .}"/>

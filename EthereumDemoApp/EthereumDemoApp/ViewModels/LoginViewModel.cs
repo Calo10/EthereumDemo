@@ -109,7 +109,7 @@ namespace EthereumDemoApp.ViewModels
                 Detail = navigation
             };
 
-            ((NavigationPage)((MasterDetailPage)App.Current.MainPage).Detail).BarBackgroundColor = Color.FromHex("CD201B");
+            ((NavigationPage)((MasterDetailPage)App.Current.MainPage).Detail).BarBackgroundColor = Color.FromHex("#E05431");
             ((NavigationPage)((MasterDetailPage)App.Current.MainPage).Detail).BarTextColor = Color.FromHex("FFFFFF");
         }
 

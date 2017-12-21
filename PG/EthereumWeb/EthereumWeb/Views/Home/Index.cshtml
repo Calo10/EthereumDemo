@@ -1,0 +1,58 @@
+﻿@model EthereumWeb.Models.HomeModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutFirst.cshtml";
+}
+
+<div class="jumbotron">
+    <h1>Plataforma web de votaciones</h1>
+    <p class="lead">Fomentamos la transparencia y la democracia.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                @using (Html.BeginForm("Login", "Home"))
+            {
+                    <div class="fieldset">Correo electrónico:</div>
+                    <div class="fieldset">@Html.TextBoxFor(model => model.Email)</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.Email)</div>
+
+
+                    <div class="fieldset">Password:</div>
+                    <div class="fieldset">@Html.PasswordFor(model => model.Password)</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.Password)</div>
+                    <div class="row">    &nbsp;</div>
+                    <div class="row">
+                        <div class="col-md-2 col-lg-offset-4 text-center">
+                            <div class="g-recaptcha" data-sitekey="6LebxDEUAAAAAOvBKPnpP1FSjyE-mxBr_vPhI5fT"></div>
+                            <div class="row">    &nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="row">    &nbsp;</div>
+
+                    <div class="row text-center">
+                        <input type="submit" value="Ingresar" class="btn btn-primary" />
+                    </div>
+                }
+            </div>
+            @if (ViewBag.ErrorLogin == "Usuario o password inválido")
+            {
+                <div class="text-danger">@ViewBag.ErrorLogin</div>
+            }
+
+            @if (ViewBag.Succefull == "Cambio exitoso")
+            {
+                <div class="text-success">@ViewBag.Succefull</div>
+            }
+            @Html.ActionLink("¿Olvido la contraseña?", "ForgotPassword", "Home")
+
+
+        </div>
+    </div>
+</div>
+<span style="display:inline-block; font-size:20px;margin:20px 0;padding:20px;border:1px solid #D3D3D3">
+    @ViewBag.Message
+</span>
+<script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>

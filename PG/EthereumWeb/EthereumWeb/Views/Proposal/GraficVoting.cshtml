@@ -1,0 +1,121 @@
+﻿@using Newtonsoft.Json;
+@using EthereumWeb.Models;
+@using System.Collections.Generic;
+@{
+    ViewBag.Title = "GraficoVoting";
+    var DatoSource = @Html.Raw(ViewBag.DataPoints); //@Html.Raw(JsonConvert.SerializeObject(ViewBag.DataPoints));
+    var Texdes = @Html.Raw(ViewBag.Description);
+    var proposal = (ProposalModel)ViewBag.Proposal;
+    var Votes = ViewBag.Votes;
+    int Count = 1;
+}
+
+<h2>GraficoVoting</h2>
+
+@if (proposal.AdvancedSearch==1) { 
+
+        <div class="row">
+        <div class=" col-md-8 col-lg-offset-2">
+            <h5><strong>Nombre:</strong> @proposal.ProposalName</h5>
+            <h5><strong>Descripcion:</strong> @proposal.Description</h5>
+            <h5><strong>Fecha Inicio:</strong> @proposal.InitialDate   <strong>Fecha Fin:</strong> @proposal.FinalDate  </h5>
+        
+       
+            @{ switch (@proposal.VotingOptions)
+                {
+                    case 1:
+                        <h5>
+                            <strong>Tipo de Votacion:</strong> Público
+                        </h5>
+                        break;
+                    case 2:
+                        <h5>
+                            <strong>Tipo de Votacion:</strong> Privado
+                        </h5>
+                        break;
+               
+                } }
+
+            <h5><strong>Cantidad máxima de votos:</strong> @proposal.MaximumQuantitySelected   <strong>Cantidad mínima de votos:</strong> @proposal.MinimumQuantitySelected  </h5>
+                   
+
+         </div>
+
+    </div>
+         <div class="row">
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    </div>
+      <div class="row">
+        &nbsp;
+        </div>
+
+}else{
+    <div class="text-danger">La votación no permite resultados parciales</div>
+   }
+
+    <div class="row">
+        <table class="table table-bordered table-hover">
+            <tr>
+                <th>Correo electronico</th>
+                <th>ContractEthereum</th>
+                <th>Opcion;</th>
+              
+            </tr>
+
+            @foreach (var item in (List<VotesModel>)Votes)
+            {
+                <tr>
+                    <td>@item.Email</td>
+                    <td>@item.AccountNumber</td>
+                    @if (proposal.VotingOptions == 1)
+                    {
+                        if (Count  == 2)
+                        {
+                            <td>No</td>
+
+                        }
+                        else
+                        {
+                        <td>SI</td>
+                            }
+                        }
+                        else
+                        {
+                        <td>********</td>
+    
+                    }
+                </tr>
+                Count += 1;
+            }
+
+        </table>
+    </div>
+    <script type="text/javascript">
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+		title:{
+            text: @Texdes
+		},
+                animationEnabled: true,
+		data: [
+		{
+			type: "doughnut",
+			startAngle: 60,
+			toolTipContent: "{legendText}: {y} - <strong>#percent% </strong>",
+			showInLegend: true,
+          explodeOnClick: false, //**Change it to true
+			dataPoints:@DatoSource
+        //[
+			//	{y: 65899660, indexLabel: "Barack Obama #percent%", legendText: "Barack Obama" },
+			//	{y: 60929152, indexLabel: "Mitt Romney #percent%", legendText: "Mitt Romney" },
+			//	{y: 2175850,  indexLabel: "Others #percent%", legendText: "Others" }
+			//]
+		}
+		]
+	});
+	chart.render();
+	}
+    </script>
+
+

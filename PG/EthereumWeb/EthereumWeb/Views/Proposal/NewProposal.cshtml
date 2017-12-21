@@ -1,0 +1,153 @@
+﻿@model EthereumWeb.Models.ProposalModel
+
+@{
+    ViewBag.Title = "Votaciones - Crear propuesta";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<h2>Formulario de registro de Nueva propuesta</h2>
+
+<div class="row">
+    <div class="row">
+        @*DIV DEL COMBO*@
+        <div class="form-group">
+            <label for="cmbVotingType">Seleccione el tipo de votacion:</label>
+            <select class="form-control" id="cmbVotingType">
+                <option value=1>Papeleta</option> @*Valor 1*@
+                <option value=2>Referendúm</option> @*Valor 2*@
+                <option value=3>Selección múltiple</option> @*Valor 3*@
+            </select>
+        </div>
+    </div>@*DIV DEL COMBO*@
+
+    <div class="row">@*DIV DE CAMPOS COMUNES*@
+
+        @using (Html.BeginForm("Registrar", "Proposal"))
+            {
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="fieldset">Nombre de la propuesta:</div>
+                    <div class="fieldset">@Html.TextBoxFor(model => model.ProposalName)</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.ProposalName)</div>
+
+                    <div class="fieldset">Descripcion:</div>
+                    <div class="fieldset">@Html.TextAreaFor(model => model.Description)</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.Description)</div>
+                    <br /><br />
+
+                    <div class="fieldset">¿Permite ver avances?:</div>
+                    @Html.RadioButtonFor(model => model.AdvancedSearch, 1, new { @checked = true })@Html.Label("Si permite ver avances") <br />
+                    @Html.RadioButtonFor(model => model.AdvancedSearch, 2)@Html.Label("No permite ver avances")
+                    <br /><br />
+
+                    <div class="fieldset">¿Público o privado?:</div>
+                    @Html.RadioButtonFor(model => model.SecurityType, 1, new { @checked = true })@Html.Label("Privado") <br />
+                    @Html.RadioButtonFor(model => model.SecurityType, 2)@Html.Label("Publico")
+                    <br /><br />
+
+                    <div class="fieldset">Fecha inicio:</div>
+                    <div class="fieldset">@Html.TextBoxFor(model => model.InitialDate, new { @type = "date" })</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.InitialDate)</div>
+                    <br /><br />
+
+                    <div class="fieldset">Fecha fin:</div>
+                    <div class="fieldset">@Html.TextBoxFor(model => model.FinalDate, new { @type = "date" })</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.FinalDate)</div>
+                    <br /><br />
+
+                    <div class="fieldset hide">@Html.TextBoxFor(model => model.QuestionTypeText, new { @Id = "txtTipoVotacion" })</div>
+
+                    <div id="divCantidades" style="display:none;">
+                        <div class="fieldset">Cantidad mínima de votos:</div>
+                        <div class="fieldset">@Html.TextBoxFor(model => model.MinimumQuantitySelected, new { @Id = "txtMinQuantity" })</div>
+                        <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.MinimumQuantitySelected)</div>
+
+                        <div class="fieldset">Cantidad máxima de votos:</div>
+                        <div class="fieldset">@Html.TextBoxFor(model => model.MaximumQuantitySelected, new { @Id = "txtMaxQuantity" })</div>
+                        <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.MaximumQuantitySelected)</div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6" id="divOpciones">
+                    @for (var i = 0; i < (int)ViewBag.Cantidad; i++)
+                    {
+                        <div id="@i" class="fieldset">Opcion  @i:</div>
+                        <input type="text" class="getInput" name="nOption" onchange="setValues()"><br>
+                    }
+                </div>
+                
+                <div class="fieldset">@Html.TextBoxFor(model => model.SelectedOptions, new { @Id = "result", @type = "hidden" })</div>
+                @*<input id="result" type="hidden">*@
+            </div>
+
+
+            <div class="row">
+                <br /><br />
+                <input type="submit" class="btn-sm btn-primary" value="Guardar propuesta" id="btnGuardarPropuesta" />
+            </div>
+
+
+            if (ViewBag.Error != null)
+            {
+                <label class="text-danger">
+                    @ViewBag.Error
+                </label>
+            }
+
+        }
+    </div>@*DIV DE CAMPOS COMUNES*@
+</div>
+
+<script type="text/javascript">
+
+    $("#cmbVotingType").change(function () {
+        if (parseInt($('#cmbVotingType option:selected').val()) == 1) { //¿Seleccionó cuenta Papeleta?
+            $('#txtTipoVotacion').val(1);
+            $('#txtMinQuantity').val(1);
+            $('#txtMaxQuantity').val(1);
+            $("#divCantidades").hide()
+            $("#divOpciones").show()
+        }
+
+        if (parseInt($('#cmbVotingType option:selected').val()) == 2) { //¿Seleccionó cuenta Referemdun?
+            $('#txtTipoVotacion').val(2);
+            $('#txtMinQuantity').val(1);
+            $('#txtMaxQuantity').val(1);
+            $("#divCantidades").hide()
+            $("#divOpciones").hide()
+        }
+
+        if (parseInt($('#cmbVotingType option:selected').val()) == 3) { //¿Seleccionó cuenta Multiple?
+            $('#txtTipoVotacion').val(3);
+            $("#divCantidades").show()
+            $("#divOpciones").show()
+        }
+    }); //Combo de seleccion de cuenta para determinar cual div mostrar
+
+    function reviewCant() {
+        debugger;
+        var cant = $('#txtMaxQuantity').val();
+        console.log('cant' + cant);
+
+        if (parseInt(cant) > 8) {
+            $('#txtMaxQuantity').val('');
+            alert('El valor opciones maxino no puede sobre pasar maximo de opciones');
+        }
+    }
+
+    function setValues() {
+
+        var list = [];
+        $('.getInput').each(function () {
+
+            if ($(this).val() != '') {
+                list.push($(this).val());
+            }
+        });
+
+        $('#result').val(list);
+    }
+
+</script>

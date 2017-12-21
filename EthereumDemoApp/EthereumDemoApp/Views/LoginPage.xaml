@@ -15,12 +15,9 @@
             <!--Login Panel-->
             <StackLayout Margin="0,90">
                 <StackLayout Margin="50,0">
-                    <!--<Label Text="Correo" TextColor="#9b9b9b"/>
-                    <Entry Text="{Binding email}" Placeholder="Digitar identificacion"  TextColor="#4a4a4a"/>-->
                     <Label Text="Token" TextColor="#9b9b9b"/>
                     <Entry Text="{Binding pass}"  Placeholder="Digitar token" TextColor="#4a4a4a" IsPassword="true"/>
-                    <Button Text="Login" Margin="0,50,0,0" Command="{Binding LoginCommand}" TextColor="#fff" Font="Bold" BackgroundColor="#CD201B"/>
-                
+                    <Button Text="Login" Margin="0,50,0,0" Command="{Binding LoginCommand}" TextColor="#fff" Font="Bold" BackgroundColor="#4CB1D9"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>

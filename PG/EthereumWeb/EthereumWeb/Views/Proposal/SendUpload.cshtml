@@ -1,0 +1,41 @@
+﻿@using EthereumWeb.Models;
+@model EthereumWeb.Models.HomeModel
+@{
+    ViewBag.Title = "SendUpload";
+    var proposal =(ProposalModel) ViewBag.Proposal;
+}
+
+<h2>Subir Archivo de Usuarios</h2>
+
+<h3><strong>Nombre Propuesta:</strong> @proposal.ProposalName</h3>
+
+@using (Html.BeginForm("Upload", "Proposal", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="file"/>
+    <button type="submit" class="bottom">Subir archivo</button>
+}
+
+<h2>Asignar propuesta a usuario Manual</h2>
+
+
+@Html.AntiForgeryToken()
+@using (Html.BeginForm("RegisterUserProposalSumit", "Proposal"))
+{
+    <div class="form-horizontal">
+        <h4>Separe los correos por ";"</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Enviar" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}

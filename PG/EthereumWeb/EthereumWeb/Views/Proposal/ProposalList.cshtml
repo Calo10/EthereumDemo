@@ -1,0 +1,238 @@
+﻿@using EthereumWeb.Models;
+
+@model List<EthereumWeb.Models.ProposalModel>
+
+@{
+    ViewBag.Title = "Votaciones - Usuarios registrados";
+}
+<br /><br />
+<h2>Tus propuestas</h2>
+<br />
+<table class="table table-bordered table-hover">
+    <tr>
+        @*<th>Correo electronico</th>*@
+        <th>Propuesta</th>
+        <th>Descripcion:</th>
+        <th>¿Publica o Privada?</th>
+        <th>Tipo de propuesta</th>
+        <th>Inicia</th>
+        <th>Finaliza</th>
+        <th>¿Permite ver avances?</th>
+        <th>Min opciones</th>
+        <th>Max opciones</th>
+        <th>Votar</th>
+        <th>Editar</th>
+        <th>Invitar</th>
+        <th>Opciones</th>
+        <th>Gráfico de avance</th>
+        <th>Borrar</th>
+    </tr>
+    @foreach (var _proposal in Model)
+    {
+        <tr>
+            <td>@_proposal.ProposalName</td>
+            <td>@_proposal.Description</td>
+            <td>
+                @if (@_proposal.SecurityType ==EnumSecurityType.Privado)
+                {
+                    <label>Privada</label>
+                }
+                else
+                {
+                    <label>Publica</label>
+                }
+            </td>
+            <td>
+                @if (@_proposal.QuestionType ==EnumQuestionType.Papeleta )
+                {
+                    <label>Papeleta</label>
+                }
+                @if (@_proposal.QuestionType == EnumQuestionType.Referendum)
+                {
+                    <label>Referendum</label>
+                }
+                @if (@_proposal.QuestionType == EnumQuestionType.OpcionMultiple)
+                {
+                    <label>Selección múltiple</label>
+                }
+
+            </td>
+            <td>@_proposal.InitialDate</td>
+            <td>@_proposal.FinalDate</td>
+            <td>
+                @if (@_proposal.AdvancedSearch == 1)
+                {
+                    <label class="text-success">Si permite</label>
+                }
+                else
+                {
+                    <label class="text-danger">No permite</label>
+                }
+            </td>
+            <td>
+                @if (@_proposal.QuestionType == EnumQuestionType.OpcionMultiple)
+                {
+                    @_proposal.MinimumQuantitySelected
+                }
+                else
+                {
+                    <label>N/A</label>
+                }
+
+            </td>
+            <td>
+                @if (@_proposal.QuestionType == EnumQuestionType.OpcionMultiple)
+                {
+                    @_proposal.MaximumQuantitySelected
+                }
+                else
+                {
+                    <label>N/A</label>
+                }
+            </td>
+            <td>
+                @if (_proposal.IsVoted)
+                {
+                    <label class="text-success">Ya votaste</label>
+                }
+                else
+                {
+                    if (DateTime.Now > _proposal.FinalDate)
+                    {
+                        <label class="text-danger">La propuesta caducó</label>
+                    }
+                    else if (DateTime.Now < _proposal.InitialDate)
+                    {
+                        <label class="text-danger">La propuesta no ha iniciado</label>
+                    }
+                    else
+                    {
+                        <a href="~/Votes/Index?id=@_proposal.ContracEthereumProposal" class="btn btn-success btn-sm" role="button">¡VOTAR!</a>
+                    }
+
+                }
+            </td>
+
+            <td>
+                @if (DateTime.Now > _proposal.InitialDate)
+                {
+                    <label class="text-danger">La propuesta ya inició</label>
+                }
+                else
+                {
+                    if (_proposal.IsMine)
+                    {
+                        @*<input class="btn-sm btn-primary" value="Editar " />*@
+                        <a href="~/Proposal/Edit?ContracEthereumProposal=@_proposal.ContracEthereumProposal"><span class="glyphicon glyphicon-pencil"></span></a>
+
+                    }
+                    else
+                    {
+
+                        <label class="text-danger">No puedes editar</label>
+                    }
+
+                }
+            </td>
+
+            <td>
+                @if (DateTime.Now > _proposal.InitialDate)
+                {
+                    <label class="text-danger">La propuesta ya inició</label>
+                }
+                else
+                {
+                    if (_proposal.IsMine)
+                    {
+                        <a href="~/Proposal/SendUpload?ContracEthereumProposal=@_proposal.ContracEthereumProposal" class="btn btn-default btn-sm" role="button">Invitar</a>
+                    }
+                    else
+                    {
+
+                        <label class="text-danger">No puedes invitar</label>
+                    }
+
+                }
+            </td>
+            <td>
+                @if (DateTime.Now > _proposal.InitialDate)
+                {
+                    <label class="text-danger">La propuesta ya inició</label>
+                }
+                else
+                {
+                    if (_proposal.QuestionType == EnumQuestionType.Referendum)
+                    {
+                        <label class="text-danger">Referendum N/A</label>
+                    }
+                    else
+                    {
+
+                        if (_proposal.IsMine)
+                        {
+                            <a href="~/Proposal/NewOption?p=@_proposal.ContracEthereumProposal&n=@_proposal.ProposalName" class="btn btn-primary" role="button">Agregar opciones</a>
+
+                        }
+                        else
+                        {
+
+                            <label class="text-danger">No puedes agregar opciones</label>
+
+                        }
+
+                    }
+
+
+                }
+            </td>
+            <td>
+                @if (_proposal.AdvancedSearch == 1)
+                {
+                    <a href="~/Proposal/GraficVoting?NumberContract=@_proposal.ContracEthereumProposal" role="button"><span class="glyphicon glyphicon-stats"></span></a>
+                }
+                else
+                {
+                    <div class="text-danger"><span class="glyphicon glyphicon-ban-circle"></span></div>
+                }
+
+            </td>
+
+            <td>
+                @if (DateTime.Now > _proposal.InitialDate)
+                {
+                    <label class="text-danger">La propuesta ya inició</label>
+                }
+                else
+                {
+                    if (_proposal.IsMine)
+                    {
+                        @*<input class="btn-sm btn-primary" value="Editar " />*@
+                        <a href="~/Proposal/Delete?p=@_proposal.ContracEthereumProposal"><span class="glyphicon glyphicon-trash"></span></a>
+
+                    }
+                    else
+                    {
+
+                        <label class="text-danger">No puedes borrar</label>
+                    }
+
+                }
+
+            </td>
+
+        </tr>
+    }
+</table>
+
+<div class="row text-center">
+    @if (!string.IsNullOrEmpty(@ViewBag.Success))
+    {
+        <h3>@ViewBag.Success</h3>
+    }
+
+</div>
+@if (((UserModel)Session["User"]).Profile != 3)
+{
+
+    <a href="~/Proposal/NewProposal">Crear nueva propuesta</a>
+}

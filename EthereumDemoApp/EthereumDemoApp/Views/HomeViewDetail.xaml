@@ -25,8 +25,8 @@
 					Command="{Binding FilterProposalsCommand}" 
                     CommandParameter="1"
 					IsEnabled="{Binding IsBusy, Converter={StaticResource cnvDenyExpressionsConverter}}"
-					BackgroundColor="#CD201B" 
-					BorderColor="#9b9b9b" 
+					BackgroundColor="#4CB1D9" 
+					BorderColor="#4CB1D9" 
 					BorderWidth="2" 
 					BorderRadius="5"/>
 
@@ -36,8 +36,8 @@
 					Command="{Binding FilterProposalsCommand}"
                     CommandParameter="2"
 					IsEnabled="{Binding IsBusy, Converter={StaticResource cnvDenyExpressionsConverter}}"
-					BackgroundColor="#CD201B" 
-					BorderColor="#9b9b9b" 
+					BackgroundColor="#4CB1D9" 
+					BorderColor="#4CB1D9" 
 					BorderWidth="2" 
 					BorderRadius="5"/>
 
@@ -47,8 +47,8 @@
 					Command="{Binding FilterProposalsCommand}" 
                     CommandParameter="3"
 					IsEnabled="{Binding IsBusy, Converter={StaticResource cnvDenyExpressionsConverter}}"
-					BackgroundColor="#CD201B" 
-					BorderColor="#9b9b9b" 
+					BackgroundColor="#4CB1D9" 
+					BorderColor="#4CB1D9" 
 					BorderWidth="2" 
 					BorderRadius="5"/>
 		</StackLayout>

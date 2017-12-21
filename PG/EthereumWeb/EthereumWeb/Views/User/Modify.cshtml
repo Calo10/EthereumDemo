@@ -1,0 +1,46 @@
+﻿@model EthereumWeb.Models.UserModel
+
+@{
+    ViewBag.Title = "User";
+}
+
+<h2>Modificar usuario</h2>
+
+<div class="ROW">
+    <div class="col-md-12">
+        @*Registrar nuevo usuario*@
+        <div class="panel panel-default">
+            <div class="panel-body">
+                @using (Html.BeginForm("ModifyUser", "User"))
+                {
+                    <div class="fieldset">Correo electrónico:</div>
+                    <div class="fieldset">@Html.TextBoxFor(model => model.Email, new { @readonly = "readonly" })</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.Email)</div>
+
+                    <div class="fieldset">Nombre:</div>
+                    <div class="fieldset">@Html.TextBoxFor(model => model.UserName)</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.UserName)</div>
+
+                    <div class="fieldset">Apellidos:</div>
+                    <div class="fieldset">@Html.TextBoxFor(model => model.UserLastName)</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.UserLastName)</div>
+
+                    <br/>
+                    @*<div class="fieldset">Password:</div>
+                    <div class="fieldset">@Html.TextBoxFor(model => model.Password)</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.Password)</div>
+
+                    <div class="fieldset">Repita el password:</div>
+                    <div class="fieldset">@Html.TextBoxFor(model => model.Password)</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.Password)</div>*@
+
+                    <input class="btn btn-primary" type="submit" value="Modificar" />
+                    if (ViewBag.ErrorModificandoUsuario != "")
+                    {
+                        <div class="text-danger">@ViewBag.ErrorModificandoUsuario</div>
+                    }
+                }
+            </div>
+        </div>
+    </div> @*Registrar nuevo usuario*@
+</div>

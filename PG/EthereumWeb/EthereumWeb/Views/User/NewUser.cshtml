@@ -1,0 +1,65 @@
+﻿@model EthereumWeb.Models.UserModel
+
+@{
+    ViewBag.Title = "Votaciones - Ingresar usuario";
+}
+
+<h2>Formulario de registro de usuario</h2>
+
+<div class="ROW">
+    <div class="col-md-12"> @*Registrar nuevo usuario*@
+        <div class="panel panel-default">
+            <div class="panel-body">
+                @using (Html.BeginForm("Registrar", "User"))
+                {
+                    <div class="fieldset">Correo electrónico:</div>
+                    <div class="fieldset">@Html.TextBoxFor(model => model.Email)</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.Email)</div>
+
+                    <div class="fieldset">Nombre:</div>
+                    <div class="fieldset">@Html.TextBoxFor(model => model.UserName)</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.UserName)</div>
+
+                    <div class="fieldset">Apellidos:</div>
+                    <div class="fieldset">@Html.TextBoxFor(model => model.UserLastName)</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.UserLastName)</div>
+
+                    <div class="fieldset">Password:</div>
+                    <div class="fieldset">@Html.PasswordFor(model => model.Password)</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.Password)</div>
+
+                    <div class="fieldset">Repita el password:</div>
+                    <div class="fieldset">@Html.PasswordFor(model => model.RepitePassword)</div>
+                    <div class="field-validation-error text-danger">@Html.ValidationMessageFor(model => model.Password)</div>
+
+                    <p>
+                        <div class="row">
+                            @Html.RadioButtonFor(model => model.Profile, 1, new { @checked = true })@Html.Label("Administrador")
+                            @Html.RadioButtonFor(model => model.Profile, 2, false)@Html.Label("Creador de propuestas")
+                        </div>
+                    </p>
+
+                    <br/><br />
+                    <input type="submit" class="btn-sm btn-primary" value="Registrar" />
+
+                    if (ViewBag.ErrorUsuarioExiste != null)
+                    {
+                        <div class="text-danger">@ViewBag.ErrorUsuarioExiste</div>
+                    }
+
+                    if (ViewBag.ErrorDesconocido != null)
+                    {
+                        <div class="text-danger">@ViewBag.ErrorDesconocido</div>
+                    }
+
+                    if (ViewBag.PasswordNoCoincide != null)
+                    {
+                        <div class="text-danger">@ViewBag.PasswordNoCoincide</div>
+                    }
+
+
+                }
+            </div>
+        </div>
+    </div> @*Registrar nuevo usuario*@
+</div>
